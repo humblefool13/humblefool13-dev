@@ -1,0 +1,12 @@
+@media only screen and (min-width: 480px) {
+  /* For larger screens: */
+  .base-component-windows {
+    height: 100vh;
+    background-image: url("./assets/windowsWallpaper.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    cursor: url("./assets/windowsCursor.cur"), auto;
+    width: 100%;
+  }
+}
