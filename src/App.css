@@ -8,9 +8,10 @@
 }
 
 .base-component-iphone {
-  background-color: black;
+  background-color: white;
   height: 100vh;
-  width: 100%;
+  margin: auto;
+  width: 95%;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -18,22 +19,44 @@
 }
 
 .iphone-container {
-  background-color: #6f6f70;
+  background-color: black;
+  background-image: linear-gradient(
+      90deg,
+      black 1%,
+      white 2.5%,
+      transparent 5%,
+      transparent 95%,
+      white 97.5%,
+      black 99%
+    ),
+    linear-gradient(
+      180deg,
+      black,
+      white 1%,
+      black 1.5%,
+      white 3%,
+      transparent 5%,
+      transparent 95%,
+      white 97%,
+      black 98.5%,
+      white 99%,
+      black
+    );
   width: 100%;
   margin: auto;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2.8rem;
+  border-radius: 40px;
 }
 
 .iphone-face {
-  background-color: black;
-  width: 94%;
+  background-color: #0f0e13;
+  width: 92%;
   margin: auto;
   height: 95.5%;
-  border-radius: 2.8rem;
+  border-radius: 40px;
 }
 
 .iphone-top-bezel {
@@ -48,7 +71,7 @@
   width: 94.5%;
   margin: auto;
   height: 69.288%;
-  background-color: yellow;
+  background-color: black;
   border-style: solid;
   border-width: 4px;
   border-color: gray;
@@ -57,7 +80,7 @@
 
 .iphone-bottom-part {
   width: 100%;
-  height: 15.355%;
+  height: 14.3%;
   display: flex;
   justify-content: center;
   align-items: center;

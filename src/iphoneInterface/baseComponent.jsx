@@ -4,7 +4,7 @@ import IPhoneFace from "./iPhoneFace";
 
 const BaseComponent = () => {
   useEffect(() => {
-    const containerWidth = window.innerWidth;
+    const containerWidth = window.innerWidth * 0.95;
     const containerHeight = containerWidth * 1.875;
     document.querySelector(".iphone-container").style.height = `${
       containerHeight > window.innerHeight
