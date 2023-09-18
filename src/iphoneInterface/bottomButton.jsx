@@ -2,6 +2,7 @@ import { useEffect } from "react";
 
 const BottomButton = () => {
   useEffect(() => {
+    handleResize();
     window.addEventListener("resize", handleResize);
   }, []);
 
