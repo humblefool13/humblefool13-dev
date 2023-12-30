@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import "./media.css";
 
-import WindowsBaseComponent from "./windowsInterface/baseComponent";
-import IphoneBaseComponent from "./iphoneInterface/baseComponent";
+import PcInterface from "./PcInterface/baseComponent";
+import PhoneInterface from "./PhoneInterface/baseComponent";
 
 function App() {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      {screenWidth >= 480 ? <WindowsBaseComponent /> : <IphoneBaseComponent />}
+      {screenWidth >= 480 ? <PcInterface /> : <PhoneInterface />}
     </div>
   );
 }
