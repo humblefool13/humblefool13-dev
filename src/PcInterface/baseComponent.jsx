@@ -10,7 +10,6 @@ const BaseComponent = () => {
     <div className="base-component-pc">
       <Router>
         <Topbar />
-        {/* <div className="content-component-pc"></div> */}
         <Routes>
           <Route path="/" element={<Homepage />} />
           {/* <Route path="/skills" element={<SnapShots />} />

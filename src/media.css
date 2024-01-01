@@ -1,5 +1,5 @@
-@media only screen and (min-width: 480px) {
-  /* For larger screens: */
+/* @media only screen and (min-width: 480px) {
+   For larger screens: 
   .base-component-windows {
     height: 100vh;
     background-image: url("./assets/windowsWallpaper.jpg");
@@ -9,4 +9,4 @@
     cursor: url("./assets/windowsCursor.cur"), auto;
     width: 100%;
   }
-}
+} */

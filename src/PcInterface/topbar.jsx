@@ -5,7 +5,7 @@ const Topbar = () => {
     <div className="header-component-pc">
       <div className="header-list">
         <Link className="header-link" to="/">
-          Me
+          About Me
         </Link>
         <Link className="header-link" to="/skills">
           Skills
