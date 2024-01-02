@@ -63,7 +63,7 @@
 
 .homepage-container {
   width: 100vw;
-  height: 85vh;
+  height: 100vh;
   display: flex;
   z-index: 0;
   justify-content: center;
