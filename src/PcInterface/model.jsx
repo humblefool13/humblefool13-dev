@@ -49,7 +49,9 @@ export default function Model(props) {
       .to(group.current.position, { z: 50, duration: 4 }, 7)
       .to(group.current.position, { y: -53, duration: 4 }, 7)
       .to(group.current.rotation, { y: -0.6, duration: 4 }, 7)
-      .to(group.current.position, { y: -1000 }, 20);
+      .to(group.current.position, { x: -35, duration: 4 }, 12)
+      .to(group.current.rotation, { y: 1, duration: 4 }, 12)
+      .to(group.current.rotation, { x: -0.5, duration: 4 }, 12);
   }, []);
 
   // eslint-disable-next-line
