@@ -6,10 +6,8 @@ import {
   pointLight,
   ambientLight,
   directionalLight,
-  axesHelper,
-  useFrame,
 } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
+import { ScrollControls, Scroll } from "@react-three/drei";
 
 import Model from "./model.jsx";
 
@@ -55,8 +53,44 @@ const CanvasComponent = () => {
           100,
         ]}
       />
-      <OrbitControls enableZoom={false} />
-      <Model position={[0, -40, 0]} rotation={[0, 0, 0]} />
+      <ScrollControls pages={3} damping={0.3}>
+        <Model position={[0, -40, 0]} rotation={[0, 0, 0]} />
+        <Scroll html style={{ width: "100%" }}>
+          <div
+            style={{
+              top: "50vh",
+              position: "absolute",
+              color: "white",
+              zIndex: 100,
+              fontSize: "30px",
+            }}
+          >
+            Text Here1
+          </div>
+          <div
+            style={{
+              top: "150vh",
+              position: "absolute",
+              color: "white",
+              zIndex: 100,
+              fontSize: "30px",
+            }}
+          >
+            Text Here2
+          </div>
+          <div
+            style={{
+              top: "250vh",
+              position: "absolute",
+              color: "white",
+              zIndex: 100,
+              fontSize: "30px",
+            }}
+          >
+            Text Here3
+          </div>
+        </Scroll>
+      </ScrollControls>
     </Canvas>
   );
 };
