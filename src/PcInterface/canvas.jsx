@@ -53,7 +53,7 @@ const CanvasComponent = () => {
           100,
         ]}
       />
-      <ScrollControls pages={4} damping={0.3}>
+      <ScrollControls pages={4} damping={0.5}>
         <Model position={[0, -40, 0]} rotation={[0, 0, 0]} />
         <Scroll html style={{ width: "100%" }}>
           <div

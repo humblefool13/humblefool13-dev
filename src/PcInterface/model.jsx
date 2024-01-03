@@ -14,6 +14,7 @@ export default function Model(props) {
   useFrame(({ scene }) => {
     if (scrollIt.current) {
       scene.rotation.y += 0.003;
+      scene.rotation.y %= 2 * Math.PI;
     } else {
       if (scene.rotation.y > 0) scene.rotation.y -= 0.03;
     }
