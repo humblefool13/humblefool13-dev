@@ -53,38 +53,32 @@ const CanvasComponent = () => {
           100,
         ]}
       />
-      <ScrollControls pages={3} damping={0.3}>
+      <ScrollControls pages={4} damping={0.3}>
         <Model position={[0, -40, 0]} rotation={[0, 0, 0]} />
         <Scroll html style={{ width: "100%" }}>
           <div
             style={{
-              top: "50vh",
+              top: "130vh",
               position: "absolute",
-              color: "white",
-              zIndex: 100,
-              fontSize: "30px",
+              width: "50%",
             }}
           >
-            Text Here1
+            <p style={{ color: "white", fontSize: "30px" }}>Text Here Lol</p>
           </div>
           <div
             style={{
-              top: "150vh",
+              top: "215vh",
               position: "absolute",
-              color: "white",
-              zIndex: 100,
-              fontSize: "30px",
+              width: "50%",
             }}
           >
             Text Here2
           </div>
           <div
             style={{
-              top: "250vh",
+              top: "320vh",
               position: "absolute",
-              color: "white",
-              zIndex: 100,
-              fontSize: "30px",
+              width: "50%",
             }}
           >
             Text Here3
