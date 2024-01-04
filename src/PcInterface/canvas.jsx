@@ -90,7 +90,7 @@ const CanvasComponent = () => {
         speed={5}
         noise={0}
       />
-      <ScrollControls pages={5} damping={0.6}>
+      <ScrollControls pages={5} damping={0.2}>
         <OverlayComponent />
         <Model position={[0, -40, 0]} rotation={[0, 0, 0]} />
       </ScrollControls>
