@@ -7,7 +7,7 @@ import {
   ambientLight,
   directionalLight,
 } from "@react-three/fiber";
-import { ScrollControls } from "@react-three/drei";
+import { ScrollControls, Sparkles } from "@react-three/drei";
 
 import Model from "./model.jsx";
 import OverlayComponent from "./overlay.jsx";
@@ -53,6 +53,15 @@ const CanvasComponent = () => {
           -(cursorPosition.y - size.height / 2),
           100,
         ]}
+      />
+
+      <Sparkles
+        count={800}
+        scale={200}
+        color={"yellow"}
+        size={20}
+        speed={5}
+        noise={0}
       />
       <ScrollControls pages={4} damping={0.6}>
         <OverlayComponent />
