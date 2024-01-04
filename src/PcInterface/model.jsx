@@ -16,7 +16,14 @@ export default function Model(props) {
       scene.rotation.y += 0.003;
       scene.rotation.y %= 2 * Math.PI;
     } else {
-      if (scene.rotation.y > 0) scene.rotation.y -= 0.03;
+      if (scene.rotation.y > 0 && scene.rotation.y < Math.PI)
+        scene.rotation.y -= 0.03;
+      if (
+        scene.rotation.y > 0 &&
+        scene.rotation.y > Math.PI &&
+        scene.rotation.y < 2 * Math.PI
+      )
+        scene.rotation.y += 0.03;
     }
   });
   useFrame((state, delta) => {
@@ -31,6 +38,16 @@ export default function Model(props) {
       .to(
         document.getElementsByClassName("text-div")[0],
         { opacity: 0, duration: 4 },
+        0
+      )
+      .to(
+        document.getElementsByClassName("text-behind")[0],
+        { fontSize: 1000, duration: 4 },
+        0
+      )
+      .to(
+        document.getElementsByClassName("text-stroked-infront")[0],
+        { fontSize: 1000, duration: 4 },
         0
       )
       .to(scrollIt, { current: false }, 0.3)
