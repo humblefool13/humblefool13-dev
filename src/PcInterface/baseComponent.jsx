@@ -9,7 +9,7 @@ import ContactPage from "./contact";
 
 const BaseComponent = () => {
   return (
-    <div className="base-component-pc">
+    <div className="base-component-pc min-h-screen bg-[#0f0e13] flex flex-col">
       <Router>
         <Topbar />
         <Routes>

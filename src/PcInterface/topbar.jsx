@@ -4,25 +4,28 @@ const Topbar = () => {
   function downloadResume() {}
 
   return (
-    <div className="header-component-pc">
-      <div className="header-list">
-        <Link className="header-link" to="/">
+    <div className="header-component-pc z-[1] font-Yeseva text-[25px] py-[10px]">
+      <div className="header-list m-auto w-4/5 flex flex-row justify-around items-center">
+        <Link className="header-link text-[22px] no-underline" to="/">
           About Me
         </Link>
-        <Link className="header-link" to="/skills">
+        <Link className="header-link text-[22px] no-underline" to="/skills">
           Skills
         </Link>
-        <Link className="header-link" to="/experience">
+        <Link className="header-link text-[22px] no-underline" to="/experience">
           Experience
         </Link>
-        <Link className="header-link" onClick={downloadResume}>
+        <Link
+          className="header-link text-[22px] no-underline"
+          onClick={downloadResume}
+        >
           Resume
         </Link>
-        <Link className="header-link" to="/contact">
+        <Link className="header-link text-[22px] no-underline" to="/contact">
           Contact
         </Link>
       </div>
-      <hr className="footer-rule"></hr>
+      <hr className="footer-rule m-auto bg-gray-700 w-[95%]"></hr>
     </div>
   );
 };

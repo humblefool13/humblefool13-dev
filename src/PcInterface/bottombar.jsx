@@ -1,8 +1,8 @@
 const Bottombar = () => {
   return (
-    <div className="footer-component-pc">
-      <hr className="footer-rule"></hr>
-      <div className="footer-text">
+    <div className="footer-component-pc w-full mt-auto pb-2.5">
+      <hr className="footer-rule m-auto bg-gray-700 w-[95%]"></hr>
+      <div className="footer-text pt-2.5 text-center text-[15px] font-Oswald">
         Copyright © 2021-2023 humblefool13<br></br>All Rights Reserved
       </div>
     </div>
