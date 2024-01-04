@@ -13,6 +13,9 @@ const Topbar = () => {
         <Link className="header-link" to="/experience">
           Experience
         </Link>
+        <Link className="header-link" to="/experience">
+          Resume
+        </Link>
         <Link className="header-link" to="/contact">
           Contact
         </Link>
