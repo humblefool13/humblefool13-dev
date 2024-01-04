@@ -54,7 +54,34 @@ const CanvasComponent = () => {
           100,
         ]}
       />
-
+      <directionalLight
+        color={"yellow"}
+        intensity={0.6}
+        position={[
+          -cursorPosition.x - size.width / 2,
+          +(cursorPosition.y - size.height / 2),
+          100,
+        ]}
+      />
+      <directionalLight
+        color={"blue"}
+        intensity={0.6}
+        position={[
+          +(cursorPosition.y - size.height / 2),
+          -cursorPosition.x - size.width / 2,
+          100,
+        ]}
+      />
+      <directionalLight
+        color={"green"}
+        intensity={0.6}
+        position={[0, 0, 100]}
+      />
+      <directionalLight
+        color={"purple"}
+        intensity={0.6}
+        position={[0, 0, 80]}
+      />
       <Sparkles
         count={800}
         scale={200}
