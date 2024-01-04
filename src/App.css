@@ -7,6 +7,12 @@
   color-scheme: dark;
 }
 
+#root,
+html,
+body {
+  overflow: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +69,7 @@
 
 .homepage-container {
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   z-index: 0;
   justify-content: center;

@@ -75,7 +75,7 @@ const OverlayComponent = () => {
       <div
         className="white"
         style={{
-          top: "320vh",
+          top: "350vh",
           position: "absolute",
           fontSize: "20px",
           width: "40%",
