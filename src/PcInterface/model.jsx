@@ -40,16 +40,6 @@ export default function Model(props) {
         { opacity: 0, duration: 4 },
         0
       )
-      .to(
-        document.getElementsByClassName("text-behind")[0],
-        { fontSize: 1000, duration: 4 },
-        0
-      )
-      .to(
-        document.getElementsByClassName("text-stroked-infront")[0],
-        { fontSize: 1000, duration: 4 },
-        0
-      )
       .to(scrollIt, { current: false }, 0.3)
       .to(group.current.position, { x: -55, duration: 4 }, 2)
       .to(group.current.rotation, { y: 0.6, duration: 4 }, 2)
