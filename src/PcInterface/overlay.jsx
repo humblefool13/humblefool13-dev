@@ -3,8 +3,8 @@ import { Scroll } from "@react-three/drei";
 const OverlayComponent = () => {
   return (
     <Scroll html className="w-full">
-      <div className="absolute w-2/5 text-[20px] font-Rubik left-[55%] top-[130vh] p-[10px] bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d]">
-        <h1 className="py-[10px]">Meet Bo!</h1>
+      <div className="absolute w-2/5 font-Rubik left-[55%] top-[150vh] p-[10px] bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d]">
+        <h1 className="py-[10px] text-[25px]">Meet Bo!</h1>
         "Bo" serves as my online identity :)
         <br />
         <br />
@@ -23,8 +23,8 @@ const OverlayComponent = () => {
         of technological advancements drives my passion for creating innovative
         solutions.
       </div>
-      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[240vh] absolute w-2/5 text-[20px] p-[10px] left-[5%] font-Rubik">
-        <h1 className="py-[10px]">Current</h1>
+      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[260vh] absolute w-2/5 p-[10px] left-[5%] font-Rubik">
+        <h1 className="py-[10px] text-[25px]">Current</h1>
         I am currently pursuing a Bachelor's in Computer Science and Engineering
         at a leading university, immersing myself in a comprehensive exploration
         of technology. Beyond academia, I actively engage in self-directed
@@ -38,8 +38,8 @@ const OverlayComponent = () => {
         hands-on experience, fostering both innovation and entrepreneurial
         spirit.
       </div>
-      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[350vh] absolute text-[20px] w-2/5 p-[10px] left-[55%] font-Rubik">
-        <h1 className="py-[10px]">Future</h1>
+      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[355vh] absolute w-2/5 p-[10px] left-[55%] font-Rubik">
+        <h1 className="py-[10px] text-[25px]">Future</h1>
         Looking ahead, I aspire to be an engineer shaping digital innovation in
         emerging tech companies. Passionate about pioneering revolutions in our
         digital lives, my focus is on contributing to transformative projects at
