@@ -26,10 +26,10 @@ const OverlayComponent = () => {
       <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[260vh] absolute w-2/5 p-[10px] left-[5%] font-Rubik">
         <h1 className="py-[10px] text-[25px]">Current</h1>
         I am currently pursuing a Bachelor's in Computer Science and Engineering
-        at a leading university, immersing myself in a comprehensive exploration
-        of technology. Beyond academia, I actively engage in self-directed
-        learning, experimenting with new tech, and staying updated on industry
-        trends.
+        at a leading university in my country, immersing myself in a
+        comprehensive exploration of technology. Beyond academia, I actively
+        engage in self-directed learning, experimenting with new tech, and
+        staying updated on industry trends.
         <br />
         <br />
         Simultaneously, I channel my passion into side projects and startup

@@ -3,7 +3,7 @@ import CanvasComponent from "./canvas.jsx";
 const Homepage = () => {
   return (
     <div className="homepage">
-      <div className="text-div absolute flex justify-center items-center h-[83vh] font-Yeseva w-full tracking-[10px] pointer-events-none">
+      <div className="text-div absolute flex justify-center items-center h-[84vh] font-Yeseva w-full tracking-[10px] pointer-events-none">
         <div className="text-behind absolute text-[170px] w-full flex justify-center items-center h-full text-white">
           humblefool13
         </div>
