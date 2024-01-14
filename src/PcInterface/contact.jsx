@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import GmailIcon from "../assets/gmail.png";
 import DiscordIcon from "../assets/discord.png";
 import TwitterIcon from "../assets/twitter.png";
@@ -14,14 +16,24 @@ const icons = {
 };
 
 const ContactPage = () => {
+  const [current, setCurrent] = useState();
+
+  const handleMouseEnter = (icon) => {
+    setCurrent(icon);
+  };
+
+  const handleMouseLeave = () => {
+    setCurrent(null);
+  };
+
   return (
     <div className="contact flex flex-row">
       <div className="left left-2/5 flex items-center w-2/5">
         <AnimatedCanvas />
       </div>
       <div className="right w-3/5">
-        <div className="heading w-full text-center py-[10px] text-[40px] font-semibold tracking-tighter">
-          Get in touch with me via social media or email!
+        <div className="heading w-full text-center py-[10px] text-[40px] tracking-tighter font-Rubik">
+          <span className="text-gradient font-bold">Get in touch</span> with me!
         </div>
         <div className="content m-auto px-[2%] min-h-[75vh] w-3/5 bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] flex flex-col justify-around mt-[20px] mb-[50px]">
           <a
@@ -29,7 +41,11 @@ const ContactPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="email-container flex flex-row">
+            <div
+              className="email-container flex flex-row"
+              onMouseEnter={() => handleMouseEnter("email")}
+              onMouseLeave={() => handleMouseLeave()}
+            >
               <div className="app-icon py-[10px] w-2/5">
                 <img
                   src={icons.mail}
@@ -38,7 +54,11 @@ const ContactPage = () => {
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
-                <div className="title text-[40px] font-medium tracking-tighter">
+                <div
+                  className={`title text-[40px] font-medium${
+                    current === "email" ? " text-gradient" : ""
+                  }`}
+                >
                   Email
                 </div>
               </div>
@@ -49,7 +69,11 @@ const ContactPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="email-container flex flex-row">
+            <div
+              className="github-container flex flex-row"
+              onMouseEnter={() => handleMouseEnter("github")}
+              onMouseLeave={() => handleMouseLeave()}
+            >
               <div className="app-icon py-[10px] w-2/5">
                 <img
                   src={icons.github}
@@ -58,7 +82,11 @@ const ContactPage = () => {
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
-                <div className="title text-[40px] font-medium tracking-tighter">
+                <div
+                  className={`title text-[40px] font-medium${
+                    current === "github" ? " text-gradient" : ""
+                  }`}
+                >
                   Github
                 </div>
               </div>
@@ -69,7 +97,11 @@ const ContactPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="email-container flex flex-row">
+            <div
+              className="twitter-container flex flex-row"
+              onMouseEnter={() => handleMouseEnter("twitter")}
+              onMouseLeave={() => handleMouseLeave()}
+            >
               <div className="app-icon py-[10px] w-2/5">
                 <img
                   src={icons.twitter}
@@ -78,14 +110,22 @@ const ContactPage = () => {
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
-                <div className="title text-[40px] font-medium tracking-tighter">
+                <div
+                  className={`title text-[40px] font-medium${
+                    current === "twitter" ? " text-gradient" : ""
+                  }`}
+                >
                   Twitter
                 </div>
               </div>
             </div>
           </a>
           <a href="https://t.me/humblefool13" target="_blank" rel="noreferrer">
-            <div className="email-container flex flex-row">
+            <div
+              className="telegram-container flex flex-row"
+              onMouseEnter={() => handleMouseEnter("telegram")}
+              onMouseLeave={() => handleMouseLeave()}
+            >
               <div className="app-icon py-[10px] w-2/5">
                 <img
                   src={icons.telegram}
@@ -94,7 +134,11 @@ const ContactPage = () => {
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
-                <div className="title text-[40px] font-medium tracking-tighter">
+                <div
+                  className={`title text-[40px] font-medium${
+                    current === "telegram" ? " text-gradient" : ""
+                  }`}
+                >
                   Telegram
                 </div>
               </div>
@@ -105,7 +149,11 @@ const ContactPage = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="email-container flex flex-row">
+            <div
+              className="discord-container flex flex-row"
+              onMouseEnter={() => handleMouseEnter("discord")}
+              onMouseLeave={() => handleMouseLeave()}
+            >
               <div className="app-icon py-[10px] w-2/5">
                 <img
                   src={icons.discord}
@@ -114,7 +162,11 @@ const ContactPage = () => {
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
-                <div className="title text-[40px] font-medium tracking-tighter">
+                <div
+                  className={`title text-[40px] font-medium${
+                    current === "discord" ? " text-gradient" : ""
+                  }`}
+                >
                   Discord
                 </div>
               </div>
