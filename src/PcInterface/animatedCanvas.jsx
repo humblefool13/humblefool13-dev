@@ -12,7 +12,7 @@ const AnimatedCanvas = () => {
       alpha={true}
       camera={{ fov: 65, near: 0.1, far: 1000, position: [0, 20, 120] }}
     >
-      <OrbitControls enableZoom={false} />
+      <OrbitControls enableZoom={false} enablePan={false} />
       <ambientLight color={"white"} intensity={1} />
       <directionalLight
         color={"yellow"}
