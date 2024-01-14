@@ -4187,7 +4187,6 @@
 	],
 	"materials":[
 		{
-			"alphaMode":"BLEND",
 			"doubleSided":true,
 			"name":"palette",
 			"pbrMetallicRoughness":{
@@ -8672,7 +8671,7 @@
 	"buffers":[
 		{
 			"byteLength":3159936,
-			"uri":"wavingTest.bin"
+			"uri":"opaque.bin"
 		}
 	]
 }
