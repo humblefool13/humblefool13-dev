@@ -7,6 +7,8 @@ import TelegramIcon from "../assets/telegram.png";
 import GithubIcon from "../assets/github.png";
 import AnimatedCanvas from "./animatedCanvas";
 
+import background from "../assets/bg.png";
+
 const icons = {
   discord: DiscordIcon,
   mail: GmailIcon,
@@ -20,10 +22,14 @@ const ContactPage = () => {
 
   const handleMouseEnter = (icon) => {
     setCurrent(icon);
+    const element = document.getElementsByClassName(`${icon}-container`)[0];
+    element.style.backgroundImage = `url(${background})`;
   };
 
-  const handleMouseLeave = () => {
+  const handleMouseLeave = (icon) => {
     setCurrent(null);
+    const element = document.getElementsByClassName(`${icon}-container`)[0];
+    element.style.backgroundImage = ``;
   };
 
   return (
@@ -42,9 +48,9 @@ const ContactPage = () => {
             rel="noreferrer"
           >
             <div
-              className="email-container flex flex-row"
+              className="email-container flex flex-row bg-no-repeat bg-contain bg-center"
               onMouseEnter={() => handleMouseEnter("email")}
-              onMouseLeave={() => handleMouseLeave()}
+              onMouseLeave={() => handleMouseLeave("email")}
             >
               <div className="app-icon py-[10px] w-2/5">
                 <img
@@ -70,9 +76,9 @@ const ContactPage = () => {
             rel="noreferrer"
           >
             <div
-              className="github-container flex flex-row"
+              className="github-container flex flex-row bg-no-repeat bg-contain bg-center"
               onMouseEnter={() => handleMouseEnter("github")}
-              onMouseLeave={() => handleMouseLeave()}
+              onMouseLeave={() => handleMouseLeave("github")}
             >
               <div className="app-icon py-[10px] w-2/5">
                 <img
@@ -98,9 +104,9 @@ const ContactPage = () => {
             rel="noreferrer"
           >
             <div
-              className="twitter-container flex flex-row"
+              className="twitter-container flex flex-row bg-no-repeat bg-contain bg-center"
               onMouseEnter={() => handleMouseEnter("twitter")}
-              onMouseLeave={() => handleMouseLeave()}
+              onMouseLeave={() => handleMouseLeave("twitter")}
             >
               <div className="app-icon py-[10px] w-2/5">
                 <img
@@ -122,9 +128,9 @@ const ContactPage = () => {
           </a>
           <a href="https://t.me/humblefool13" target="_blank" rel="noreferrer">
             <div
-              className="telegram-container flex flex-row"
+              className="telegram-container flex flex-row bg-no-repeat bg-contain bg-center"
               onMouseEnter={() => handleMouseEnter("telegram")}
-              onMouseLeave={() => handleMouseLeave()}
+              onMouseLeave={() => handleMouseLeave("telegram")}
             >
               <div className="app-icon py-[10px] w-2/5">
                 <img
@@ -150,9 +156,9 @@ const ContactPage = () => {
             rel="noreferrer"
           >
             <div
-              className="discord-container flex flex-row"
+              className="discord-container flex flex-row bg-no-repeat bg-contain bg-center"
               onMouseEnter={() => handleMouseEnter("discord")}
-              onMouseLeave={() => handleMouseLeave()}
+              onMouseLeave={() => handleMouseLeave("discord")}
             >
               <div className="app-icon py-[10px] w-2/5">
                 <img
