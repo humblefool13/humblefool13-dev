@@ -3,7 +3,7 @@ import DiscordIcon from "../assets/discord.png";
 import TwitterIcon from "../assets/twitter.png";
 import TelegramIcon from "../assets/telegram.png";
 import GithubIcon from "../assets/github.png";
-import Kong from "../assets/kong.png";
+import AnimatedCanvas from "./animatedCanvas";
 
 const icons = {
   discord: DiscordIcon,
@@ -17,11 +17,7 @@ const ContactPage = () => {
   return (
     <div className="contact flex flex-row">
       <div className="left left-2/5 flex items-center w-2/5">
-        <img
-          src={Kong}
-          alt="Me"
-          className="rounded-3xl w-3/4 ml-[30%] shadow-[-10px_-10px_50px_10px_rgba(181,255,132,0.5),_10px_10px_30px_10px_rgba(86,50,114,1)]"
-        />
+        <AnimatedCanvas />
       </div>
       <div className="right w-3/5">
         <div className="heading w-full text-center py-[10px] text-[40px] font-semibold tracking-tighter">
