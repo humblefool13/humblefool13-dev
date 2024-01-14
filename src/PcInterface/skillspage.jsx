@@ -118,14 +118,14 @@ const SkillsPage = () => {
         </div>
       </div>
       <div className="right-content-container h-full w-full flex justify-center items-center">
-        <div className="pages-container min-h-[90%] min-w-[90%]">
-          <div className="page min-h-[100%] min-w-[100%]">lol1</div>
-          <div className="page min-h-[100%] min-w-[100%]">lol3</div>
-          <div className="page min-h-[100%] min-w-[100%]">lol2</div>
-          <div className="page min-h-[100%] min-w-[100%]">lol4</div>
-          <div className="page min-h-[100%] min-w-[100%]">lol5</div>
-          <div className="page min-h-[100%] min-w-[100%]">lol6</div>
-          <div className="page min-h-[100%] min-w-[100%]">lol7</div>
+        <div className="pages-container min-h-[90%] min-w-[90%] flex overflow-x-scroll">
+          <section className="page min-h-[100%] min-w-[100%]">lol1</section>
+          <section className="page min-h-[100%] min-w-[100%]">lol2</section>
+          <section className="page min-h-[100%] min-w-[100%]">lol3</section>
+          <section className="page min-h-[100%] min-w-[100%]">lol4</section>
+          <section className="page min-h-[100%] min-w-[100%]">lol5</section>
+          <section className="page min-h-[100%] min-w-[100%]">lol6</section>
+          <section className="page min-h-[100%] min-w-[100%]">lol7</section>
         </div>
       </div>
     </div>
