@@ -14,7 +14,7 @@ const AnimatedCanvas = () => {
     >
       <OrbitControls enableZoom={false} />
       <ambientLight color={"white"} intensity={1} />
-      <Model position={[10, -40, 0]} scale={45} />
+      <Model position={[3.5, -47, 0]} scale={45} />
     </Canvas>
   );
 };
