@@ -7,7 +7,7 @@ import TelegramIcon from "../assets/telegram.png";
 import GithubIcon from "../assets/github.png";
 import AnimatedCanvas from "./animatedCanvas";
 
-import background from "../assets/bg.png";
+import background from "../assets/bg.gif";
 
 const icons = {
   discord: DiscordIcon,
