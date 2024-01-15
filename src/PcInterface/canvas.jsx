@@ -46,6 +46,8 @@ const CanvasComponent = () => {
       camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 20, 90] }}
     >
       <ambientLight intensity={0.5} color={"white"} />
+      <ambientLight intensity={0.3} color={"#6af50d"} />
+      <ambientLight intensity={0.3} color={"#ffeb3b"} />
       <directionalLight
         color={"cyan"}
         intensity={0.9}
