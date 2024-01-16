@@ -6,6 +6,7 @@ module.exports = {
         Oswald: ["Oswald", "sans-serif"],
         Yeseva: ["Yeseva One", "serif"],
         Rubik: ["Rubik"],
+        Space: ["Space Grotesk", "sans-serif"],
       },
     },
   },
