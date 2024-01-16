@@ -7,6 +7,7 @@ module.exports = {
         Yeseva: ["Yeseva One", "serif"],
         Rubik: ["Rubik"],
         Space: ["Space Grotesk", "sans-serif"],
+        Bungee: ["Bungee Spice", "sans-serif"],
       },
     },
   },

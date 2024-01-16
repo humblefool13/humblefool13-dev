@@ -11,12 +11,12 @@ const SkillsPage = () => {
       xPercent: -100 * (pagesHardSkills.length - 1),
       ease: "none",
       scrollTrigger: {
-        trigger: ".pahes-container-hard",
+        trigger: ".pages-container-hard",
         pin: true,
         scrub: 1,
-        snap: 1 / (pagesHardSkills.length - 1),
+        snap: 1 / pagesHardSkills.length - 1,
         end: () =>
-          "+=" + document.querySelector(".pahes-container-hard").offsetWidth,
+          "+=" + document.querySelector(".pages-container-hard").offsetWidth,
       },
     });
 
@@ -28,7 +28,7 @@ const SkillsPage = () => {
         trigger: ".pages-container-soft",
         pin: true,
         scrub: 1,
-        snap: 1 / (pagesSoftSkills.length - 1),
+        snap: 1 / pagesSoftSkills.length - 1,
         end: () =>
           "+=" + document.querySelector(".pages-container-soft").offsetWidth,
       },
@@ -42,7 +42,7 @@ const SkillsPage = () => {
         trigger: ".pages-container-extra",
         pin: true,
         scrub: 1,
-        snap: 1 / (pagesExtraSkills.length - 1),
+        snap: 1 / pagesExtraSkills.length - 1,
         end: () =>
           "+=" + document.querySelector(".pages-container-extra").offsetWidth,
       },
@@ -51,37 +51,75 @@ const SkillsPage = () => {
 
   return (
     <div className="skills-page overflow-hidden">
-      <div className="pahes-container-hard min-h-[100vh] min-w-[100vw] flex">
+      <div className="pages-container-hard min-h-[100vh] min-w-[100vw] flex items-center">
         <section className="page-hard min-h-[100%] min-w-[100%]">
-          <div className="heading-hard-skill w-full text-center">
+          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
             Hard Skills
           </div>
-          <div className="container">
-            <div className="programming-header">Programming Languages</div>
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Programming Languages
+            </div>
             <div className="container flex flex-row items-center justify-around"></div>
           </div>
         </section>
-        <section className="page-hard min-h-[100%] min-w-[100%] bg-slate-800">
-          Technologies
+        <section className="page-hard min-h-[100%] min-w-[100%]">
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Technologies
+            </div>
+            <div className="container flex flex-row items-center justify-around"></div>
+          </div>
         </section>
       </div>
       <div className="pages-container-soft min-h-[100vh] min-w-[100vw] flex">
-        <section className="page-soft min-h-[100%] min-w-[100%] bg-green-700">
-          Team Player
+        <section className="page-soft min-h-[100%] min-w-[100%]">
+          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+            Soft Skills
+          </div>
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Team Player
+            </div>
+            <div className="container flex flex-row items-center justify-around"></div>
+          </div>
         </section>
-        <section className="page-soft min-h-[100%] min-w-[100%] bg-green-800">
-          Community
+        <section className="page-soft min-h-[100%] min-w-[100%]">
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Community Relations
+            </div>
+            <div className="container flex flex-row items-center justify-around"></div>
+          </div>
         </section>
-        <section className="page-soft min-h-[100%] min-w-[100%] bg-green-900">
-          English
+        <section className="page-soft min-h-[100%] min-w-[100%]">
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Language Proficiency
+            </div>
+            <div className="container flex flex-row items-center justify-around"></div>
+          </div>
         </section>
       </div>
       <div className="pages-container-extra min-h-[100vh] min-w-[100vw] flex">
-        <section className="page-extra min-h-[100%] min-w-[100%] bg-yellow-800">
-          Work on Demand
+        <section className="page-extra min-h-[100%] min-w-[100%]">
+          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+            Offbeat Talents
+          </div>
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Work on Demand
+            </div>
+            <div className="container flex flex-row items-center justify-around"></div>
+          </div>
         </section>
-        <section className="page-extra min-h-[100%] min-w-[100%] bg-yellow-900">
-          Bad at Valorant
+        <section className="page-extra min-h-[100%] min-w-[100%]">
+          <div className="container max-w-[1536px] m-auto pt-[6%]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+              Sucks at Gaming
+            </div>
+            <div className="container flex flex-row items-center justify-around"></div>
+          </div>
         </section>
       </div>
     </div>
