@@ -39,7 +39,8 @@ const ContactPage = () => {
       </div>
       <div className="right w-3/5">
         <div className="heading w-full text-center py-[10px] text-[40px] tracking-tighter font-Rubik">
-          <span className="text-gradient font-bold">Get in touch</span> with me!
+          <span className="text-gradient-green font-bold">Get in touch</span>{" "}
+          with me!
         </div>
         <div className="content m-auto px-[2%] min-h-[75vh] w-3/5 bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] flex flex-col justify-around mt-[20px] mb-[50px]">
           <a
@@ -62,7 +63,7 @@ const ContactPage = () => {
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
                   className={`title text-[40px] font-medium${
-                    current === "email" ? " text-gradient" : ""
+                    current === "email" ? " text-gradient-green" : ""
                   }`}
                 >
                   Email
@@ -90,7 +91,7 @@ const ContactPage = () => {
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
                   className={`title text-[40px] font-medium${
-                    current === "github" ? " text-gradient" : ""
+                    current === "github" ? " text-gradient-green" : ""
                   }`}
                 >
                   Github
@@ -118,7 +119,7 @@ const ContactPage = () => {
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
                   className={`title text-[40px] font-medium${
-                    current === "twitter" ? " text-gradient" : ""
+                    current === "twitter" ? " text-gradient-green" : ""
                   }`}
                 >
                   Twitter
@@ -142,7 +143,7 @@ const ContactPage = () => {
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
                   className={`title text-[40px] font-medium${
-                    current === "telegram" ? " text-gradient" : ""
+                    current === "telegram" ? " text-gradient-green" : ""
                   }`}
                 >
                   Telegram
@@ -170,7 +171,7 @@ const ContactPage = () => {
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
                   className={`title text-[40px] font-medium${
-                    current === "discord" ? " text-gradient" : ""
+                    current === "discord" ? " text-gradient-green" : ""
                   }`}
                 >
                   Discord
