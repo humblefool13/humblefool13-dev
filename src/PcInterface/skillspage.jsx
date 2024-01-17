@@ -2,6 +2,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
+import ProgrammingLanguages from "./ProgrammingLanguages";
+import Technologies from "./Technologies";
+import TeamPlayer from "./TeamPlayer";
+import Community from "./Community";
+import Language from "./Language";
+import WorkOnDemand from "./WorkHours";
+import Gaming from "./Gaming";
+
 const SkillsPage = () => {
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -53,14 +61,14 @@ const SkillsPage = () => {
     <div className="skills-page overflow-hidden">
       <div className="pages-container-hard min-h-[100vh] min-w-[100vw] flex items-center">
         <section className="page-hard min-h-[100%] min-w-[100%]">
-          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
             Hard Skills
           </div>
           <div className="container max-w-[1536px] m-auto pt-[6%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Programming Languages
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <ProgrammingLanguages />
           </div>
         </section>
         <section className="page-hard min-h-[100%] min-w-[100%]">
@@ -68,20 +76,20 @@ const SkillsPage = () => {
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Technologies
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <Technologies />
           </div>
         </section>
       </div>
       <div className="pages-container-soft min-h-[100vh] min-w-[100vw] flex">
         <section className="page-soft min-h-[100%] min-w-[100%]">
-          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+          <div className="absolute heading-hard-skill w-full text-center text-[60px] text-gradient-blue font-bold underline decoration-[#d7bef5] decoration-double decoration-8">
             Soft Skills
           </div>
           <div className="container max-w-[1536px] m-auto pt-[6%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Team Player
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <TeamPlayer />
           </div>
         </section>
         <section className="page-soft min-h-[100%] min-w-[100%]">
@@ -89,7 +97,7 @@ const SkillsPage = () => {
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Community Relations
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <Community />
           </div>
         </section>
         <section className="page-soft min-h-[100%] min-w-[100%]">
@@ -97,20 +105,20 @@ const SkillsPage = () => {
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Language Proficiency
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <Language />
           </div>
         </section>
       </div>
       <div className="pages-container-extra min-h-[100vh] min-w-[100vw] flex">
         <section className="page-extra min-h-[100%] min-w-[100%]">
-          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient-red font-bold underline decoration-[#940B92] decoration-double decoration-8">
             Offbeat Talents
           </div>
           <div className="container max-w-[1536px] m-auto pt-[6%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Work on Demand
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <WorkOnDemand />
           </div>
         </section>
         <section className="page-extra min-h-[100%] min-w-[100%]">
@@ -118,7 +126,7 @@ const SkillsPage = () => {
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Sucks at Gaming
             </div>
-            <div className="container flex flex-row items-center justify-around"></div>
+            <Gaming />
           </div>
         </section>
       </div>

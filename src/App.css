@@ -52,3 +52,10 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.text-gradient-red {
+  background: linear-gradient(to right, #e554a6, #940b92);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
