@@ -160,7 +160,7 @@ const Technologies = () => {
           return (
             <div
               key={index}
-              className="w-[20%] flex-col justify-center items-center py-[1%]"
+              className="w-[16.66%] flex-col justify-center items-center py-[1%]"
             >
               <div className="w-[80px] h-[80px] m-auto flex justify-center items-center">
                 <img
