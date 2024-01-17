@@ -72,7 +72,7 @@ const SkillsPage = () => {
           </div>
         </section>
         <section className="page-hard min-h-[100%] min-w-[100%]">
-          <div className="container max-w-[1536px] m-auto pt-[6%]">
+          <div className="container max-w-[1536px] m-auto pt-[1%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Technologies
             </div>

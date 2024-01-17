@@ -33,16 +33,16 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact flex flex-row">
+    <div className="contact flex flex-row h-full">
       <div className="left left-2/5 flex items-center w-2/5">
         <AnimatedCanvas />
       </div>
-      <div className="right w-3/5">
-        <div className="heading w-full text-center py-[10px] text-[40px] tracking-tighter font-Rubik">
+      <div className="right w-3/5 h-full">
+        <div className="heading w-full text-center py-[10px] text-[30px] tracking-tighter font-Rubik">
           <span className="text-gradient-green font-bold">Get in touch</span>{" "}
           with me!
         </div>
-        <div className="content m-auto px-[2%] min-h-[75vh] w-3/5 bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] flex flex-col justify-around mt-[20px] mb-[50px]">
+        <div className="content m-auto px-[2%] min-h-[65vh] w-3/5 bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] flex flex-col justify-around mt-[8px] mb-[50px]">
           <a
             href="https://mail.google.com/mail/?view=cm&to=contact@humblefool13.dev"
             target="_blank"
@@ -57,12 +57,12 @@ const ContactPage = () => {
                 <img
                   src={icons.mail}
                   alt="Gmail Icon"
-                  className="w-[100px] h-[100px] m-auto rounded-3xl"
+                  className="w-[60px] h-[60px] m-auto rounded-3xl"
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
-                  className={`title text-[40px] font-medium${
+                  className={`title text-[30px] font-medium${
                     current === "email" ? " text-gradient-green" : ""
                   }`}
                 >
@@ -85,12 +85,12 @@ const ContactPage = () => {
                 <img
                   src={icons.github}
                   alt="Github Icon"
-                  className="w-[100px] h-[100px] m-auto rounded-3xl"
+                  className="w-[60px] h-[60px] m-auto rounded-3xl"
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
-                  className={`title text-[40px] font-medium${
+                  className={`title text-[30px] font-medium${
                     current === "github" ? " text-gradient-green" : ""
                   }`}
                 >
@@ -113,12 +113,12 @@ const ContactPage = () => {
                 <img
                   src={icons.twitter}
                   alt="Twitter Icon"
-                  className="w-[100px] h-[100px] m-auto  rounded-3xl"
+                  className="w-[60px] h-[60px] m-auto  rounded-3xl"
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
-                  className={`title text-[40px] font-medium${
+                  className={`title text-[30px] font-medium${
                     current === "twitter" ? " text-gradient-green" : ""
                   }`}
                 >
@@ -137,12 +137,12 @@ const ContactPage = () => {
                 <img
                   src={icons.telegram}
                   alt="Telegram Icon"
-                  className="w-[100px] h-[100px] m-auto"
+                  className="w-[60px] h-[60px] m-auto"
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
-                  className={`title text-[40px] font-medium${
+                  className={`title text-[30px] font-medium${
                     current === "telegram" ? " text-gradient-green" : ""
                   }`}
                 >
@@ -165,12 +165,12 @@ const ContactPage = () => {
                 <img
                   src={icons.discord}
                   alt="Discord Icon"
-                  className="w-[100px] h-[100px] m-auto bg-white rounded-3xl"
+                  className="w-[60px] h-[60px] m-auto bg-white rounded-3xl"
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
                 <div
-                  className={`title text-[40px] font-medium${
+                  className={`title text-[30px] font-medium${
                     current === "discord" ? " text-gradient-green" : ""
                   }`}
                 >

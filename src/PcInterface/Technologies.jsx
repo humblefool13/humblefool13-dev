@@ -154,7 +154,7 @@ const technologies = [
 
 const Technologies = () => {
   return (
-    <div className="min-h-[50vh] bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] w-full mt-[2%] hover:mt-[1.8%] shadow-[0_25px_60px_-15px_#ffeb3b]">
+    <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] w-4/5 mt-[2%] hover:mt-[1.8%] shadow-[0_25px_60px_-15px_#ffeb3b] m-auto">
       <div className="p-[15px] w-[90%] flex flex-row flex-wrap justify-evenly items-center m-auto">
         {technologies.map((item, index) => {
           return (
@@ -162,14 +162,14 @@ const Technologies = () => {
               key={index}
               className="w-[16.66%] flex-col justify-center items-center py-[1%]"
             >
-              <div className="w-[80px] h-[80px] m-auto flex justify-center items-center">
+              <div className="w-[50px] h-[50px] m-auto flex justify-center items-center">
                 <img
                   src={item.icon}
                   alt={item.name}
                   className={`${item.name === "Flask" ? "bg-white" : ""}`}
                 />
               </div>
-              <div className="pt-[8px] text-center font-Rubik text-[20px]">
+              <div className="pt-[8px] text-center font-Rubik text-[18px]">
                 {item.name}
               </div>
             </div>

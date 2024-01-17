@@ -69,7 +69,7 @@ const languages = [
 
 const ProgrammingLanguages = () => {
   return (
-    <div className="min-h-[50vh] bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] w-full mt-[2%] hover:mt-[1.8%] shadow-[0_25px_60px_-15px_#ffeb3b]">
+    <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] w-4/5 mt-[2%] hover:mt-[1.8%] shadow-[0_25px_60px_-15px_#ffeb3b] m-auto">
       <div className="p-[15px] w-[90%] flex flex-row flex-wrap justify-evenly items-center m-auto">
         {languages.map((item, index) => {
           return (
@@ -77,7 +77,7 @@ const ProgrammingLanguages = () => {
               key={index}
               className="w-[20%] flex-col justify-center items-center py-[2%]"
             >
-              <div className="w-[80px] m-auto">
+              <div className="w-[60px] m-auto">
                 <img src={item.icon} alt={item.name} />
               </div>
               <div className="pt-[3px] text-center font-Rubik text-[20px]">
