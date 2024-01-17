@@ -57,7 +57,7 @@ const ContactPage = () => {
                 <img
                   src={icons.mail}
                   alt="Gmail Icon"
-                  className="w-[60px] h-[60px] m-auto rounded-3xl"
+                  className="w-[60px] h-[60px] m-auto"
                 />
               </div>
               <div className="app-text flex flex-row py-[10px] w-3/5 items-center">
