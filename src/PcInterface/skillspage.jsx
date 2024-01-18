@@ -95,7 +95,7 @@ const SkillsPage = () => {
         <section className="page-soft min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[3%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
-              Community Relations
+              Community Relations and Leadership
             </div>
             <Community />
           </div>

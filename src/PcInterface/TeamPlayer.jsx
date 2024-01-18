@@ -11,7 +11,7 @@ const TeamPlayer = () => {
         <div className="image w-1/2">
           <img src={Team} alt="Remote Team" className="w-3/5 m-auto" />
         </div>
-        <div className="para w-1/2 font-Rubik text-[18px] leading-tight">
+        <div className="para w-1/2 font-Rubik text-[18px] leading-6">
           With a proven track record in team collaboration, I have accumulated
           valuable experience working within diverse teams, ranging from compact
           units of 5 members to larger-scale collaborations involving up to 30
@@ -26,7 +26,7 @@ const TeamPlayer = () => {
         </div>
       </div>
       <div className="lowerhalf flex-row flex mt-[25px] w-4/5 m-auto">
-        <div className="para w-1/2 font-Rubik text-[18px] leading-tight">
+        <div className="para w-1/2 font-Rubik text-[18px] leading-6">
           In collaborative development environments, I bring proficiency with
           essential tools such as Slack, Notion, MSTeams and Linear. This
           ensures streamlined communication and project management, fostering a
