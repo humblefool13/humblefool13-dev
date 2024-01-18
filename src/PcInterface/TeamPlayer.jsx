@@ -15,9 +15,7 @@ const TeamPlayer = () => {
           With a proven track record in team collaboration, I have accumulated
           valuable experience working within diverse teams, ranging from compact
           units of 5 members to larger-scale collaborations involving up to 30
-          individuals. My ability to adapt and thrive in these varying team
-          sizes has equipped me with a nuanced understanding of effective
-          teamwork dynamics.
+          individuals.
           <br />
           <br />
           Furthermore, I am adept at seamlessly integrating into remote work
@@ -29,8 +27,7 @@ const TeamPlayer = () => {
         <div className="para w-1/2 font-Rubik text-[18px] leading-6">
           In collaborative development environments, I bring proficiency with
           essential tools such as Slack, Notion, MSTeams and Linear. This
-          ensures streamlined communication and project management, fostering a
-          cohesive and productive team workflow.
+          ensures streamlined communication and project management.
         </div>
         <div className="image w-1/2 flex flex-row justify-around items-center">
           <img src={MSTeams} alt="Microsoft Teams" className="w-[11%]" />
