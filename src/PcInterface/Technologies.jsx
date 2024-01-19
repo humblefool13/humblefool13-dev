@@ -20,7 +20,7 @@ import Moralis from "../assets/technologies/moralis.png";
 import Alchemy from "../assets/technologies/alchemy.png";
 import Flask from "../assets/technologies/flask.png";
 import Arduino from "../assets/technologies/arduino.png";
-import Pytorch from "../assets/technologies/pytorch.png";
+import PMTwo from "../assets/technologies/pm2.png";
 import ScikitLearn from "../assets/technologies/scikitlearn.png";
 import Tensorflow from "../assets/technologies/tensorflow.png";
 import Git from "../assets/technologies/git.png";
@@ -127,8 +127,8 @@ const technologies = [
     icon: Tensorflow,
   },
   {
-    name: "Pytorch",
-    icon: Pytorch,
+    name: "PM2",
+    icon: PMTwo,
   },
   {
     name: "Payments",
