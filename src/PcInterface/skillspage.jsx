@@ -8,7 +8,7 @@ import TeamPlayer from "./TeamPlayer";
 import Community from "./Community";
 import Language from "./Language";
 import WorkOnDemand from "./WorkHours";
-import Gaming from "./Gaming";
+import Ai from "./AI";
 
 const SkillsPage = () => {
   useGSAP(() => {
@@ -116,7 +116,7 @@ const SkillsPage = () => {
           </div>
           <div className="container max-w-[1536px] m-auto pt-[6%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
-              Work on Demand
+              Adaptable Work Ethic
             </div>
             <WorkOnDemand />
           </div>
@@ -124,9 +124,9 @@ const SkillsPage = () => {
         <section className="page-extra min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[1%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
-              Sucks at Gaming
+              Leveraging AI tools
             </div>
-            <Gaming />
+            <Ai />
           </div>
         </section>
       </div>
