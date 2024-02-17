@@ -33,7 +33,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="contact flex flex-row h-full">
+    <div className="contact flex flex-row min-h-[85vh] h-full">
       <div className="left left-2/5 flex items-center w-2/5">
         <AnimatedCanvas />
       </div>
