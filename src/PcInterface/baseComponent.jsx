@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import "../AppPC.css";
 import Topbar from "./topbar";
 import Bottombar from "./bottombar";
 import Homepage from "./homepage";

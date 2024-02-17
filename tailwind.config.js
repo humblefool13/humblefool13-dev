@@ -9,6 +9,9 @@ module.exports = {
         Space: ["Space Grotesk", "sans-serif"],
         Bungee: ["Bungee Spice", "sans-serif"],
       },
+      cursor: {
+        Banana: "url(./assets/finalCursor.png), default",
+      },
     },
   },
   plugins: [],

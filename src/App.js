@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-import "./App.css";
 import "./media.css";
 
 import PcInterface from "./PcInterface/baseComponent";
