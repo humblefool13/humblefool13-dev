@@ -26,7 +26,7 @@ import Tensorflow from "../assets/technologies/tensorflow.png";
 import Git from "../assets/technologies/git.png";
 import Github from "../assets/technologies/github.png";
 import Netlify from "../assets/technologies/netlify.png";
-import OpenAI from "../assets/technologies/openai.png";
+import Next from "../assets/technologies/next.png";
 import Payments from "../assets/technologies/payments.png";
 
 const technologies = [
@@ -75,8 +75,8 @@ const technologies = [
     icon: Redux,
   },
   {
-    name: "Figma",
-    icon: Figma,
+    name: "NextJS",
+    icon: Next,
   },
   {
     name: "Discord.js",
@@ -135,16 +135,16 @@ const technologies = [
     icon: Payments,
   },
   {
+    name: "Figma",
+    icon: Figma,
+  },
+  {
     name: "Git",
     icon: Git,
   },
   {
     name: "Github",
     icon: Github,
-  },
-  {
-    name: "OpenAI",
-    icon: OpenAI,
   },
   {
     name: "Netlify",
@@ -162,11 +162,19 @@ const Technologies = () => {
               key={index}
               className="w-[16.66%] flex-col justify-center items-center py-[1%]"
             >
-              <div className="w-[50px] h-[50px] m-auto flex justify-center items-center">
+              <div className="w-[50px] h-[50px] m-auto flex justify-center items-center hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
                 <img
                   src={item.icon}
                   alt={item.name}
-                  className={`${item.name === "Flask" ? "bg-white" : ""}`}
+                  className={`${
+                    item.name === "Flask" ||
+                    item.name === "ExpressJS" ||
+                    item.name === "NextJS" ||
+                    item.name === "EthersJS" ||
+                    item.name === "Scikit-learn"
+                      ? "bg-white p-[1px] rounded-full"
+                      : ""
+                  }`}
                 />
               </div>
               <div className="pt-[8px] text-center font-Rubik text-[18px]">

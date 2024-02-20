@@ -77,7 +77,7 @@ const ProgrammingLanguages = () => {
               key={index}
               className="w-[20%] flex-col justify-center items-center py-[2%]"
             >
-              <div className="w-[60px] m-auto">
+              <div className="w-[60px] m-auto hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
                 <img src={item.icon} alt={item.name} />
               </div>
               <div className="pt-[3px] text-center font-Rubik text-[20px]">
