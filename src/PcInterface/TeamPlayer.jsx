@@ -30,13 +30,25 @@ const TeamPlayer = () => {
           ensures streamlined communication and project management.
         </div>
         <div className="image w-1/2 flex flex-row justify-around items-center">
-          <img src={MSTeams} alt="Microsoft Teams" className="w-[11%]" />
-          <img src={Linear} alt="Linear" className="w-[10%]" />
-          <img src={Slack} alt="Slack" className="w-[10%] rounded-xl" />
+          <img
+            src={MSTeams}
+            alt="Microsoft Teams"
+            className="w-[11%] hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+          />
+          <img
+            src={Linear}
+            alt="Linear"
+            className="w-[10%] hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+          />
+          <img
+            src={Slack}
+            alt="Slack"
+            className="w-[10%] rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+          />
           <img
             src={Notion}
             alt="Notion"
-            className="w-[10%] bg-white rounded-xl"
+            className="w-[10%] bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
           />
         </div>
       </div>
