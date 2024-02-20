@@ -12,7 +12,7 @@ const Community = () => {
           relationships within communities, including a notable track record of
           managing a{" "}
           <span className="text-gradient-green font-bold">
-            150k member community
+            200k member community
           </span>{" "}
           and various other communities exceeding 50k members.
           <br />
