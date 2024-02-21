@@ -21,10 +21,11 @@ const ExperiencePage = () => {
           growth.
           <br />
           <br />
-          The development of this project served as my initiation into
-          asynchronous programming, introducing me to crucial concepts like APIs
-          and git version control. Unfortunately, I had to halt its development
-          and maintenance to redirect my focus toward larger life endeavors.
+          The development of this project served as my introduction to several
+          crucial concepts, including asynchronous programming, APIs, and Git
+          version control, among others. Unfortunately, I had to halt its
+          development and maintenance to redirect my focus toward larger life
+          endeavors.
         </div>
         <img src={Easy} alt="Easy Bot Peak" className="w-[40%]" />
         <figcaption className="font-Space pt-[5px]">
@@ -93,10 +94,10 @@ const ExperiencePage = () => {
           <br />
           <br />
           In addition to this, I developed several other applications, including
-          an AI support bot, an advanced server join screening bot, and a
-          real-time web application for monitoring security and activities
-          across community Discord servers. This multifaceted experience not
-          only enhanced my problem-solving skills but also afforded me the
+          an AI support bot, an advanced server join screening bot, and a web
+          application for monitoring security and activities across community
+          Discord servers in real-time. This multifaceted experience not only
+          enhanced my problem-solving skills but also afforded me the
           opportunity to build products for esteemed clients such as Adidas and
           Prada. Working in such a collaborative environment further refined my
           ability to deliver innovative solutions.
