@@ -68,32 +68,59 @@
 
 .background-programming-languages {
   background: radial-gradient(
-    ellipse at top right,
-    #0f0e13 34.9%,
-    #e554a6 35%,
-    #b7eafc 50%,
-    #0f0e13 50.1%
-  );
+      ellipse at top right,
+      transparent 34.8%,
+      #0f0e13 34.9%,
+      #e554a6 35%,
+      #b7eafc 50%,
+      #0f0e13 50.1%,
+      transparent 50.2%
+    ),
+    radial-gradient(
+      circle at 15% 70%,
+      transparent 2%,
+      #e554a6 5%,
+      #b7eafc 7%,
+      transparent 8.1%
+    );
 }
 
 .background-technologies {
   background: radial-gradient(
-    ellipse at bottom left,
-    #0f0e13 20.6%,
-    #b7eafc 20.7%,
-    #e554a6 35.7%,
-    #0f0e13 35.8%
-  );
+      ellipse at bottom left,
+      transparent 20.5%,
+      #0f0e13 20.6%,
+      #b7eafc 20.7%,
+      #e554a6 35.7%,
+      #0f0e13 35.8%,
+      transparent 35.9%
+    ),
+    radial-gradient(
+      circle at 95% 5%,
+      transparent 4%,
+      #e554a6 10%,
+      #b7eafc 17%,
+      transparent 18.1%
+    );
 }
 
 .background-collaborative {
   background: radial-gradient(
-    ellipse at top right,
-    #0f0e13 34.9%,
-    #e554a6 35%,
-    #6af50d 50%,
-    #0f0e13 50.1%
-  );
+      ellipse at top right,
+      transparent 34.8%,
+      #0f0e13 34.9%,
+      #e554a6 35%,
+      #6af50d 50%,
+      #0f0e13 50.1%,
+      transparent 50.2%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      transparent 15%,
+      #e554a6 20.1%,
+      #6af50d 25%,
+      transparent 31%
+    );
 }
 
 .background-community {
@@ -119,30 +146,50 @@
 
 .background-language {
   background: radial-gradient(
-    ellipse at bottom left,
-    #0f0e13 20.2%,
-    #6af50d 20.3%,
-    #e554a6 35.7%,
-    #0f0e13 35.8%
-  );
+      ellipse at bottom left,
+      transparent 20.1%,
+      #0f0e13 20.2%,
+      #6af50d 20.3%,
+      #e554a6 35.7%,
+      #0f0e13 35.8%,
+      transparent 35.9%
+    ),
+    radial-gradient(
+      circle at 300% -250%,
+      transparent 73%,
+      #e554a6 74.1%,
+      #6af50d 76%,
+      transparent 77.1%
+    );
 }
 
 .background-ethic {
   background: radial-gradient(
-    ellipse at top right,
-    #0f0e13 34.9%,
-    #b7eafc 35%,
-    #6af50d 50.4%,
-    #0f0e13 50.5%
-  );
+      ellipse at top right,
+      transparent 34.8%,
+      #0f0e13 34.9%,
+      #b7eafc 35%,
+      #6af50d 50.4%,
+      #0f0e13 50.5%,
+      transparent 50.6%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      transparent 30%,
+      #b7eafc 35%,
+      #6af50d 37%,
+      transparent 40%
+    );
 }
 
 .background-ai {
   background: radial-gradient(
     ellipse at bottom left,
+    transparent 20.1%,
     #0f0e13 20.2%,
     #6af50d 20.3%,
     #b7eafc 35.7%,
-    #0f0e13 35.8%
+    #0f0e13 35.8%,
+    transparent 35.9%
   );
 }
