@@ -11,12 +11,6 @@
   color: white;
 }
 
-*,
-*:before,
-*:after {
-  @apply cursor-Banana;
-}
-
 .text-behind {
   text-shadow: 0 0 40px rgba(192, 219, 255, 0.48),
     0 0 20px rgba(65, 120, 255, 0.24);
