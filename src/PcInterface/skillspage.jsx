@@ -60,7 +60,7 @@ const SkillsPage = () => {
   return (
     <div className="skills-page overflow-hidden">
       <div className="pages-container-hard min-h-[100vh] min-w-[100vw] flex items-center">
-        <section className="page-hard min-h-[100%] min-w-[100%]">
+        <section className="page-hard min-h-[100%] min-w-[100%] background-programming-languages">
           <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
             Hard Skills
           </div>
@@ -71,7 +71,7 @@ const SkillsPage = () => {
             <ProgrammingLanguages />
           </div>
         </section>
-        <section className="page-hard min-h-[100%] min-w-[100%]">
+        <section className="page-hard min-h-[100%] min-w-[100%] background-technologies">
           <div className="container max-w-[1536px] m-auto pt-[1%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Technologies
@@ -81,7 +81,7 @@ const SkillsPage = () => {
         </section>
       </div>
       <div className="pages-container-soft min-h-[100vh] min-w-[100vw] flex">
-        <section className="page-soft min-h-[100%] min-w-[100%]">
+        <section className="background-collaborative page-soft min-h-[100%] min-w-[100%]">
           <div className="absolute heading-hard-skill w-full text-center text-[60px] text-gradient-blue font-bold underline decoration-[#d7bef5] decoration-double decoration-8">
             Soft Skills
           </div>
@@ -92,7 +92,7 @@ const SkillsPage = () => {
             <TeamPlayer />
           </div>
         </section>
-        <section className="page-soft min-h-[100%] min-w-[100%]">
+        <section className="background-community page-soft min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[3%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Community Relations and Leadership
@@ -100,7 +100,7 @@ const SkillsPage = () => {
             <Community />
           </div>
         </section>
-        <section className="page-soft min-h-[100%] min-w-[100%]">
+        <section className="background-language page-soft min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[3%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Language Proficiency
@@ -110,7 +110,7 @@ const SkillsPage = () => {
         </section>
       </div>
       <div className="pages-container-extra min-h-[100vh] min-w-[100vw] flex">
-        <section className="page-extra min-h-[100%] min-w-[100%]">
+        <section className="background-ethic page-extra min-h-[100%] min-w-[100%]">
           <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient-red font-bold underline decoration-[#940B92] decoration-double decoration-8">
             Offbeat Talents
           </div>
@@ -121,7 +121,7 @@ const SkillsPage = () => {
             <WorkOnDemand />
           </div>
         </section>
-        <section className="page-extra min-h-[100%] min-w-[100%]">
+        <section className="background-ai page-extra min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[1%]">
             <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
               Leveraging AI tools

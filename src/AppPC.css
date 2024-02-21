@@ -65,3 +65,84 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.background-programming-languages {
+  background: radial-gradient(
+    ellipse at top right,
+    #0f0e13 34.9%,
+    #e554a6 35%,
+    #b7eafc 50%,
+    #0f0e13 50.1%
+  );
+}
+
+.background-technologies {
+  background: radial-gradient(
+    ellipse at bottom left,
+    #0f0e13 20.6%,
+    #b7eafc 20.7%,
+    #e554a6 35.7%,
+    #0f0e13 35.8%
+  );
+}
+
+.background-collaborative {
+  background: radial-gradient(
+    ellipse at top right,
+    #0f0e13 34.9%,
+    #e554a6 35%,
+    #6af50d 50%,
+    #0f0e13 50.1%
+  );
+}
+
+.background-community {
+  background: radial-gradient(
+      ellipse at top right,
+      transparent 34.8%,
+      #0f0e13 34.9%,
+      #e554a6 35%,
+      #6af50d 50.4%,
+      #0f0e13 50.5%,
+      transparent 50.6%
+    ),
+    radial-gradient(
+      ellipse at top left,
+      transparent 34.8%,
+      #0f0e13 34.9%,
+      #e554a6 35%,
+      #6af50d 50%,
+      #0f0e13 50.1%,
+      transparent 50.2%
+    );
+}
+
+.background-language {
+  background: radial-gradient(
+    ellipse at bottom left,
+    #0f0e13 20.2%,
+    #6af50d 20.3%,
+    #e554a6 35.7%,
+    #0f0e13 35.8%
+  );
+}
+
+.background-ethic {
+  background: radial-gradient(
+    ellipse at top right,
+    #0f0e13 34.9%,
+    #b7eafc 35%,
+    #6af50d 50.4%,
+    #0f0e13 50.5%
+  );
+}
+
+.background-ai {
+  background: radial-gradient(
+    ellipse at bottom left,
+    #0f0e13 20.2%,
+    #6af50d 20.3%,
+    #b7eafc 35.7%,
+    #0f0e13 35.8%
+  );
+}
