@@ -61,7 +61,7 @@ const SkillsPage = () => {
     <div className="skills-page overflow-hidden">
       <div className="pages-container-hard min-h-[100vh] min-w-[100vw] flex items-center">
         <section className="page-hard min-h-[100%] min-w-[100%] background-programming-languages">
-          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+          <div className="absolute heading-hard-skill w-full text-center text-[60px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
             Hard Skills
           </div>
           <div className="container max-w-[1536px] m-auto pt-[6%]">
