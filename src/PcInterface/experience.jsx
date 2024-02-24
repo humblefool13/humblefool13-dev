@@ -6,14 +6,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Easy from "../assets/easy.png";
 
 const ExperiencePage = () => {
-  const tl = useRef();
+  const tlStarter = useRef();
   const tlMain = useRef();
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    tl.current = gsap.timeline();
-    tl.current.fromTo(
+    tlStarter.current = gsap.timeline();
+    tlStarter.current.fromTo(
       "#container1",
       {
         x: "200vw",
@@ -24,7 +24,11 @@ const ExperiencePage = () => {
         ease: "power4",
       }
     );
-    tl.current.to("#container1", { x: "0vw", duration: 0.1, ease: "power4" });
+    tlStarter.current.to("#container1", {
+      x: "0vw",
+      duration: 0.1,
+      ease: "power4",
+    });
 
     tlMain.current = gsap.timeline({
       scrollTrigger: {
