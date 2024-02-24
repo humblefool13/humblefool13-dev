@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Easy from "../assets/easy.png";
+import ProgressBar from "./ProgressBar";
 
 const ExperiencePage = () => {
   const tlStarter = useRef();
@@ -54,9 +55,9 @@ const ExperiencePage = () => {
                 Easy Bot
               </h1>
               <div className="py-[20px]">
-                <progress max={100} value={25} />
+                <ProgressBar width={"20"} height={"2"} progress={0.25} />
               </div>
-              <div className="font-Rubik text-[18px]">
+              <div className="font-Rubik text-[18px] w-4/5">
                 This marked the inception of my inaugural public project — a
                 Discord bot designed to provide an array of games, community
                 management tools, and utility functions. At its zenith, the bot
@@ -96,9 +97,9 @@ const ExperiencePage = () => {
                 </a>
               </h1>
               <div className="py-[20px]">
-                <progress max={100} value={50} />
+                <ProgressBar width={"20"} height={"2"} progress={0.5} />
               </div>
-              <div className="font-Rubik text-[18px]">
+              <div className="font-Rubik text-[18px] w-4/5">
                 Collaborating with this group stands out as one of the most
                 impactful experiences in my life. Initially involved in
                 marketing strategies and execution, my role later evolved to
@@ -137,9 +138,9 @@ const ExperiencePage = () => {
                 BoBotLabs
               </h1>
               <div className="py-[20px]">
-                <progress max={100} value={75} />
+                <ProgressBar width={"20"} height={"2"} progress={0.75} />
               </div>
-              <div className="font-Rubik text-[18px]">
+              <div className="font-Rubik text-[18px] w-4/5">
                 I founded this organization with a vision to address common
                 challenges encountered by web3 users. The initiative encompassed
                 a range of applications tailored to the diverse needs of web3
@@ -186,9 +187,9 @@ const ExperiencePage = () => {
                 </a>
               </h1>
               <div className="py-[20px]">
-                <progress max={100} value={100} />
+                <ProgressBar width={"20"} height={"2"} progress={1} />
               </div>
-              <div className="font-Rubik text-[18px]">
+              <div className="font-Rubik text-[18px] w-4/5">
                 Collaborating with a highly skilled team, I spearheaded the
                 creation of a sophisticated giveaway bot. This advanced tool
                 seamlessly integrates with platforms like Discord and X
