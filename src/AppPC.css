@@ -187,3 +187,12 @@
     transparent 35.9%
   );
 }
+
+.border-exp {
+  background-image: linear-gradient(
+    #6af50d 10%,
+    #0f0e13 30%,
+    #0f0e13 70%,
+    #ffeb3b 90%
+  );
+}

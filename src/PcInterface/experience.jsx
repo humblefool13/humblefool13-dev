@@ -78,7 +78,7 @@ const ExperiencePage = () => {
                 <img
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="w-[90%] m-auto rounded-2xl"
+                  className="border-exp w-[90%] p-[3px] m-auto rounded-3xl"
                 />
                 <figcaption className="font-Space pt-[15px] text-center">
                   The bot stats from 2021!
