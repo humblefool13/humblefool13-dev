@@ -189,6 +189,7 @@
 }
 
 .border-exp {
+  padding: 3px;
   background-image: linear-gradient(
     #6af50d 10%,
     #0f0e13 30%,

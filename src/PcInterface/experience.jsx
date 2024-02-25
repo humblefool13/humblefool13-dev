@@ -3,7 +3,10 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Easy from "../assets/easy.png";
+import Easy from "../assets/experience/easy.png";
+import ST61 from "../assets/experience/st61.png";
+import ST62 from "../assets/experience/st62.png";
+import ST63 from "../assets/experience/st63.png";
 import ProgressBar from "./ProgressBar";
 
 const ExperiencePage = () => {
@@ -12,6 +15,19 @@ const ExperiencePage = () => {
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
+
+    tlMain.current = gsap.timeline({
+      scrollTrigger: {
+        scrub: true,
+      },
+    });
+    tlMain.current.to("#container2", { opacity: 1 }, 0.5);
+    tlMain.current.to("#container1", { opacity: 0 }, 0.4);
+    tlMain.current.to("#container3", { opacity: 1 }, 1.7);
+    tlMain.current.to("#container2", { opacity: 0 }, 1.5);
+    tlMain.current.to("#container4", { opacity: 1 }, 2.85);
+    tlMain.current.to("#container3", { opacity: 0 }, 2.7);
+    tlMain.current.to("lol", {}, 3);
 
     tlStarter.current = gsap.timeline();
     tlStarter.current.fromTo(
@@ -31,18 +47,20 @@ const ExperiencePage = () => {
       ease: "power4",
     });
 
-    tlMain.current = gsap.timeline({
+    gsap.from("#pull", {
       scrollTrigger: {
-        scrub: true,
+        trigger: ".st6-info",
+        start: "45% 10%",
+        end: "94.3% 80%",
+        scrub: 3,
       },
+      x: "150vw",
+      y: "-350vh",
+      opacity: 0,
+      width: "10px",
+      duration: 5,
+      ease: "none",
     });
-    tlMain.current.to("#container2", { opacity: 1 }, 0.5);
-    tlMain.current.to("#container1", { opacity: 0 }, 0.4);
-    tlMain.current.to("#container3", { opacity: 1 }, 1.7);
-    tlMain.current.to("#container2", { opacity: 0 }, 1.5);
-    tlMain.current.to("#container4", { opacity: 1 }, 2.85);
-    tlMain.current.to("#container3", { opacity: 0 }, 2.7);
-    tlMain.current.to("lol", {}, 3);
   }, []);
 
   return (
@@ -78,7 +96,7 @@ const ExperiencePage = () => {
                 <img
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="border-exp w-[90%] p-[3px] m-auto rounded-3xl"
+                  className="border-exp w-[90%] m-auto rounded-3xl"
                 />
                 <figcaption className="font-Space pt-[15px] text-center">
                   The bot stats from 2021!
@@ -189,7 +207,7 @@ const ExperiencePage = () => {
               <div className="py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={1} />
               </div>
-              <div className="font-Rubik text-[18px] w-4/5">
+              <div className="font-Rubik text-[18px] w-4/5" id="st6-info">
                 Collaborating with a highly skilled team, I spearheaded the
                 creation of a sophisticated giveaway bot. This advanced tool
                 seamlessly integrates with platforms like Discord and X
@@ -213,13 +231,23 @@ const ExperiencePage = () => {
             <div className="w-2/5 flex flex-row justify-center items-center">
               <div>
                 <img
-                  src={Easy}
-                  alt="Easy Bot Peak"
-                  className="w-[90%] m-auto rounded-2xl"
+                  id="pull"
+                  src={ST63}
+                  alt={"ST6 AI Assistant ( XFini )"}
+                  className="w-[500px] absolute top-[78%] right-[17%] rotate-[-20deg] border-exp rounded-3xl"
                 />
-                <figcaption className="font-Space pt-[15px] text-center">
-                  The bot stats from 2021!
-                </figcaption>
+                <img
+                  id="pull"
+                  src={ST62}
+                  alt={"ST6 Community Gate ( DraupFly )"}
+                  className="w-[400px] rotate-[30deg] top-[78%] absolute border-exp rounded-3xl"
+                />
+                <img
+                  id="pull"
+                  src={ST61}
+                  alt={"ST6 Giveaways ( SnapBot )"}
+                  className="w-[400px] absolute right-[15%] border-exp rounded-3xl"
+                />
               </div>
             </div>
           </div>
