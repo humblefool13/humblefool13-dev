@@ -52,7 +52,7 @@ const ExperiencePage = () => {
         trigger: ".st6-info",
         start: "45% 10%",
         end: "94.3% 80%",
-        scrub: 3,
+        scrub: 1,
       },
       x: "150vw",
       y: "-350vh",
