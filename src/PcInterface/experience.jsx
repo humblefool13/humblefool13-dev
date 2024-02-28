@@ -7,6 +7,11 @@ import Easy from "../assets/experience/easy.png";
 import ST61 from "../assets/experience/st61.png";
 import ST62 from "../assets/experience/st62.png";
 import ST63 from "../assets/experience/st63.png";
+import I13371 from "../assets/experience/1337-1.png";
+import I13372 from "../assets/experience/1337-2.png";
+import I13373 from "../assets/experience/1337-3.png";
+import BoBot2 from "../assets/experience/bobot2.png";
+
 import ProgressBar from "./ProgressBar";
 
 const ExperiencePage = () => {
@@ -61,6 +66,32 @@ const ExperiencePage = () => {
       duration: 5,
       ease: "none",
     });
+
+    gsap.from("#bobot-imgs", {
+      scrollTrigger: {
+        trigger: ".bobot-para",
+        start: "25% 80%",
+        end: "100% 90%",
+        scrub: 1,
+      },
+      transform: "rotate(45deg)",
+      width: "10px",
+      opacity: 0,
+      duration: 5,
+      ease: "none",
+    });
+
+    gsap.from("#group-1337-imgs", {
+      scrollTrigger: {
+        trigger: ".para-1337",
+        start: "25% 80%",
+        end: "100% 90%",
+        scrub: 1,
+      },
+      filter: "invert(1)",
+      duration: 5,
+      ease: "none",
+    });
   }, []);
 
   return (
@@ -96,7 +127,7 @@ const ExperiencePage = () => {
                 <img
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="border-exp w-[90%] m-auto rounded-3xl"
+                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] w-[90%] m-auto rounded-3xl"
                 />
                 <figcaption className="font-Space pt-[15px] text-center">
                   The bot stats from 2021!
@@ -117,7 +148,7 @@ const ExperiencePage = () => {
               <div className="py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={0.5} />
               </div>
-              <div className="font-Rubik text-[18px] w-4/5">
+              <div className="para-1337 font-Rubik text-[18px] w-4/5">
                 Collaborating with this group stands out as one of the most
                 impactful experiences in my life. Initially involved in
                 marketing strategies and execution, my role later evolved to
@@ -137,13 +168,23 @@ const ExperiencePage = () => {
             <div className="w-2/5 flex flex-row justify-center items-center">
               <div>
                 <img
-                  src={Easy}
-                  alt="Easy Bot Peak"
-                  className="w-[90%] m-auto rounded-2xl"
+                  id="group-1337-imgs"
+                  src={I13373}
+                  alt={"Auto Impersonator Ban"}
+                  className="w-[400px] absolute top-[26%] right-[23%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
-                <figcaption className="font-Space pt-[15px] text-center">
-                  The bot stats from 2021!
-                </figcaption>
+                <img
+                  id="group-1337-imgs"
+                  src={I13372}
+                  alt={"Keyword Bans"}
+                  className="w-[400px] top-[35%] right-[2%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                />
+                <img
+                  id="group-1337-imgs"
+                  src={I13371}
+                  alt={"Community Engagement"}
+                  className="w-[400px] absolute right-[15%] top-[40%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                />
               </div>
             </div>
           </div>
@@ -158,7 +199,7 @@ const ExperiencePage = () => {
               <div className="py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={0.75} />
               </div>
-              <div className="font-Rubik text-[18px] w-4/5">
+              <div className="bobot-para font-Rubik text-[18px] w-4/5">
                 I founded this organization with a vision to address common
                 challenges encountered by web3 users. The initiative encompassed
                 a range of applications tailored to the diverse needs of web3
@@ -177,17 +218,13 @@ const ExperiencePage = () => {
                 organization.
               </div>
             </div>
-            <div className="w-2/5 flex flex-row justify-center items-center">
-              <div>
-                <img
-                  src={Easy}
-                  alt="Easy Bot Peak"
-                  className="w-[90%] m-auto rounded-2xl"
-                />
-                <figcaption className="font-Space pt-[15px] text-center">
-                  The bot stats from 2021!
-                </figcaption>
-              </div>
+            <div className="w-2/5 flex flex-col mt-[10vh] justify-center items-center">
+              <img
+                id="bobot-imgs"
+                src={BoBot2}
+                alt="Live collection data"
+                className="w-[450px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl relative z-[6]"
+              />
             </div>
           </div>
           <div
@@ -212,9 +249,9 @@ const ExperiencePage = () => {
                 creation of a sophisticated giveaway bot. This advanced tool
                 seamlessly integrates with platforms like Discord and X
                 (Twitter), incorporating multiple blockchain functionalities to
-                customize requirements and fulfill user needs. On the backend,
-                it empowers the team with efficient tools to manage raffle
-                winners effectively.
+                customize requirements and fulfill user needs. Behind the
+                scenes, it empowers the team with efficient tools to manage
+                raffle winners effectively.
                 <br />
                 <br />
                 In addition to this, I developed several other applications,
@@ -234,19 +271,19 @@ const ExperiencePage = () => {
                   id="pull"
                   src={ST63}
                   alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[500px] absolute top-[78%] right-[17%] rotate-[-20deg] border-exp rounded-3xl"
+                  className="w-[500px] absolute top-[78%] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
                   src={ST62}
                   alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[400px] rotate-[30deg] top-[78%] absolute border-exp rounded-3xl"
+                  className="w-[400px] rotate-[30deg] top-[78%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
                   src={ST61}
                   alt={"ST6 Giveaways ( SnapBot )"}
-                  className="w-[400px] absolute right-[15%] border-exp rounded-3xl"
+                  className="w-[400px] absolute right-[15%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
               </div>
             </div>
