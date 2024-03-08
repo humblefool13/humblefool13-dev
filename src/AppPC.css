@@ -21,22 +21,21 @@
   -webkit-text-stroke: 2px white;
 }
 
+/* #155552 35%,
+#953e2e 50%, */
+
 .contact {
   background-image: radial-gradient(
       circle at center,
-      hsla(253, 16%, 7%, 1) 0,
-      transparent 70% 50px
-    ),
-    radial-gradient(
-      circle at center,
-      hsla(253, 16%, 7%, 1) 0,
+      #953e2e 0,
       transparent 70% 100px
     ),
     radial-gradient(
       circle at center,
-      hsla(96.098, 100%, 76%, 1) 0,
+      hsla(96.098, 100%, 76%, 0.2) 0,
       transparent 70% 200px
-    );
+    ),
+    radial-gradient(circle at center, #155552 0, transparent 100% 50px);
 }
 
 .text-gradient-green {
@@ -186,4 +185,25 @@
     #0f0e13 35.8%,
     transparent 35.9%
   );
+}
+
+.bg-experience-page {
+  background: radial-gradient(
+      ellipse at bottom left,
+      transparent 20.1%,
+      #0f0e13 20.2%,
+      #953e2e 20.3%,
+      #155552 35.7%,
+      #0f0e13 35.8%,
+      transparent 35.9%
+    ),
+    radial-gradient(
+      ellipse at top right,
+      transparent 20.1%,
+      #0f0e13 20.2%,
+      #953e2e 20.3%,
+      #155552 35.7%,
+      #0f0e13 35.8%,
+      transparent 35.9%
+    );
 }

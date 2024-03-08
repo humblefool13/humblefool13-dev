@@ -30,11 +30,11 @@ const ExperiencePage = () => {
       },
     });
     tlMain.current.to("#container2", { opacity: 1 }, 0.5);
-    tlMain.current.to("#container1", { opacity: 0 }, 0.4);
+    tlMain.current.to("#container1", { opacity: 0.001 }, 0.4);
     tlMain.current.to("#container3", { opacity: 1 }, 1.7);
-    tlMain.current.to("#container2", { opacity: 0 }, 1.5);
+    tlMain.current.to("#container2", { opacity: 0.001 }, 1.5);
     tlMain.current.to("#container4", { opacity: 1 }, 2.85);
-    tlMain.current.to("#container3", { opacity: 0 }, 2.7);
+    tlMain.current.to("#container3", { opacity: 0.001 }, 2.7);
     tlMain.current.to("lol", {}, 3);
 
     tlStarter.current = gsap.timeline();
@@ -99,7 +99,8 @@ const ExperiencePage = () => {
 
   return (
     <div className="min-h-[340vh]">
-      <div className="backdrop-blur-[200px]">
+      <div className="fixed top-[5.5%] left-[0] min-h-[90vh] min-w-[95vw] bg-experience-page"></div>
+      <div className="backdrop-blur-[80px]">
         <div className="m-auto max-w-[1536px] w-4/5">
           <div className="container flex flex-row min-h-[83vh]" id="container1">
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
@@ -139,7 +140,7 @@ const ExperiencePage = () => {
             </div>
           </div>
           <div
-            className="container flex flex-row min-h-[83vh] opacity-0"
+            className="container flex flex-row min-h-[83vh] opacity-[0.001]"
             id="container2"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
@@ -192,7 +193,7 @@ const ExperiencePage = () => {
             </div>
           </div>
           <div
-            className="container flex flex-row min-h-[83vh] opacity-0"
+            className="container flex flex-row min-h-[83vh] opacity-[0.001]"
             id="container3"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
@@ -249,7 +250,7 @@ const ExperiencePage = () => {
             </div>
           </div>
           <div
-            className="container flex flex-row min-h-[83vh] opacity-0"
+            className="container flex flex-row min-h-[83vh] opacity-[0.001]"
             id="container4"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
@@ -292,13 +293,13 @@ const ExperiencePage = () => {
                   id="pull"
                   src={ST63}
                   alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[500px] absolute top-[79%] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[500px] absolute top-[80%] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
                   src={ST62}
                   alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[400px] rotate-[30deg] top-[79%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] rotate-[30deg] top-[80%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"

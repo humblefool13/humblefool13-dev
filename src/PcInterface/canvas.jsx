@@ -86,9 +86,17 @@ const CanvasComponent = () => {
         position={[0, 0, 80]}
       />
       <Sparkles
-        count={800}
+        count={400}
         scale={200}
-        color={"yellow"}
+        color={"#34ddd5"}
+        size={20}
+        speed={5}
+        noise={0}
+      />
+      <Sparkles
+        count={400}
+        scale={200}
+        color={"#e25e46"}
         size={20}
         speed={5}
         noise={0}
