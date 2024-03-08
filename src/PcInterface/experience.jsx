@@ -10,7 +10,10 @@ import ST63 from "../assets/experience/st63.png";
 import I13371 from "../assets/experience/1337-1.png";
 import I13372 from "../assets/experience/1337-2.png";
 import I13373 from "../assets/experience/1337-3.png";
+import BoBot1 from "../assets/experience/bobot1.png";
 import BoBot2 from "../assets/experience/bobot2.png";
+import BoBot3 from "../assets/experience/bobot3.png";
+import BoBot4 from "../assets/experience/bobot4.png";
 
 import ProgressBar from "./ProgressBar";
 
@@ -177,13 +180,13 @@ const ExperiencePage = () => {
                   id="group-1337-imgs"
                   src={I13372}
                   alt={"Keyword Bans"}
-                  className="w-[400px] top-[35%] right-[2%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] top-[33%] right-[2%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13371}
                   alt={"Community Engagement"}
-                  className="w-[400px] absolute right-[15%] top-[40%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] absolute right-[18%] top-[37%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
               </div>
             </div>
@@ -223,7 +226,25 @@ const ExperiencePage = () => {
                 id="bobot-imgs"
                 src={BoBot2}
                 alt="Live collection data"
-                className="w-[450px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl relative z-[6]"
+                className="relative w-[400px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] right-[20%]"
+              />
+              <img
+                id="bobot-imgs"
+                src={BoBot4}
+                alt="Rhino Sales bot"
+                className="relative w-[350px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] bottom-[25%] left-[35%]"
+              />
+              <img
+                id="bobot-imgs"
+                src={BoBot3}
+                alt="Testimonial-1"
+                className="relative w-[450px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] left-[40%] bottom-[75%] rotate-[-20deg]"
+              />
+              <img
+                id="bobot-imgs"
+                src={BoBot1}
+                alt="Testimonial-2"
+                className="relative w-[450px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] right-[30%] bottom-[55%] rotate-[20deg]"
               />
             </div>
           </div>
@@ -271,13 +292,13 @@ const ExperiencePage = () => {
                   id="pull"
                   src={ST63}
                   alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[500px] absolute top-[78%] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[500px] absolute top-[79%] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
                   src={ST62}
                   alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[400px] rotate-[30deg] top-[78%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] rotate-[30deg] top-[79%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
