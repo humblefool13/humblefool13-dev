@@ -5,7 +5,7 @@ const Topbar = () => {
 
   return (
     <div className="header-component-pc font-Yeseva text-[25px] py-[10px] z-[100] bg-[#0f0e13]">
-      <div className="header-list m-auto w-4/5 flex flex-row justify-around items-center">
+      <div className="max-w-[1536px] header-list m-auto w-4/5 flex flex-row justify-around items-center">
         <Link className="header-link text-[22px] no-underline" to="/">
           About Me
         </Link>
