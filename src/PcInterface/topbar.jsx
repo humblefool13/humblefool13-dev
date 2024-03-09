@@ -62,7 +62,7 @@ const Topbar = () => {
         <div
           className={`z-[120] fixed top-0 left-0 ${
             !showMenu ? "hidden" : "inline"
-          } w-screen h-screen backdrop-blur-[90px] flex flex-col justify-center items-center`}
+          } w-screen h-screen backdrop-blur-[90px] flex flex-col justify-center items-center text-[20px]`}
         >
           <Link
             className="header-link no-underline py-[20px]"
