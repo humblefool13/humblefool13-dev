@@ -61,11 +61,11 @@ const SkillsPage = () => {
     <div className="skills-page overflow-hidden">
       <div className="pages-container-hard min-h-[100vh] min-w-[100vw] flex items-center">
         <section className="page-hard min-h-[100%] min-w-[100%] background-programming-languages">
-          <div className="absolute heading-hard-skill w-full text-center text-[60px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-8">
+          <div className="heading-hard-skill w-full text-center text-[30px] md:text-[35px] lg:text-[40px] xl:text-[55px] 2xl:text-[80px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-2 md:decoration-4 lg:decoration-8">
             Hard Skills
           </div>
-          <div className="container max-w-[1536px] m-auto pt-[6%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+          <div className="container max-w-[1536px] m-auto">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Programming Languages
             </div>
             <ProgrammingLanguages />
@@ -73,7 +73,7 @@ const SkillsPage = () => {
         </section>
         <section className="page-hard min-h-[100%] min-w-[100%] background-technologies">
           <div className="container max-w-[1536px] m-auto pt-[1%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Technologies
             </div>
             <Technologies />
@@ -82,11 +82,11 @@ const SkillsPage = () => {
       </div>
       <div className="pages-container-soft min-h-[100vh] min-w-[100vw] flex">
         <section className="background-collaborative page-soft min-h-[100%] min-w-[100%]">
-          <div className="absolute heading-hard-skill w-full text-center text-[60px] text-gradient-blue font-bold underline decoration-[#d7bef5] decoration-double decoration-8">
+          <div className="heading-hard-skill w-full text-center text-[30px] md:text-[35px] lg:text-[40px] xl:text-[55px] 2xl:text-[80px] text-gradient-blue font-bold underline decoration-[#d7bef5] decoration-double decoration-2 md:decoration-4 lg:decoration-8">
             Soft Skills
           </div>
-          <div className="container max-w-[1536px] m-auto pt-[6%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+          <div className="container max-w-[1536px] m-auto">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Collaborative Proficiency
             </div>
             <TeamPlayer />
@@ -94,7 +94,7 @@ const SkillsPage = () => {
         </section>
         <section className="background-community page-soft min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[3%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Community Relations and Leadership
             </div>
             <Community />
@@ -102,7 +102,7 @@ const SkillsPage = () => {
         </section>
         <section className="background-language page-soft min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[3%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Language Proficiency
             </div>
             <Language />
@@ -111,11 +111,11 @@ const SkillsPage = () => {
       </div>
       <div className="pages-container-extra min-h-[100vh] min-w-[100vw] flex">
         <section className="background-ethic page-extra min-h-[100%] min-w-[100%]">
-          <div className=" absolute heading-hard-skill w-full text-center text-[60px] text-gradient-red font-bold underline decoration-[#940B92] decoration-double decoration-8">
+          <div className="heading-hard-skill w-full text-center text-[30px] md:text-[35px] lg:text-[40px] xl:text-[55px] 2xl:text-[80px] text-gradient-red font-bold underline decoration-[#940B92] decoration-double decoration-2 md:decoration-4 lg:decoration-8">
             Offbeat Talents
           </div>
-          <div className="container max-w-[1536px] m-auto pt-[6%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+          <div className="container max-w-[1536px] m-auto">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Adaptable Work Ethic
             </div>
             <WorkOnDemand />
@@ -123,7 +123,7 @@ const SkillsPage = () => {
         </section>
         <section className="background-ai page-extra min-h-[100%] min-w-[100%]">
           <div className="container max-w-[1536px] m-auto pt-[1%]">
-            <div className="programming-header w-full text-center font-Oswald uppercase text-[30px] text-[gray]">
+            <div className="programming-header w-full text-center font-Oswald uppercase text-[15px] md:text-[17px] lg:text-[20px] xl:text-[28px] 2xl:text-[40px] lg:pt-[10px] text-[gray]">
               Leveraging AI tools
             </div>
             <Ai />
