@@ -75,12 +75,12 @@ const ProgrammingLanguages = () => {
           return (
             <div
               key={index}
-              className="w-[20%] flex-col justify-center items-center py-[2%]"
+              className="w-[20%] flex-col justify-center items-center py-[4px] lg:py-[8px] xl:py-[12px]"
             >
-              <div className="w-[60px] m-auto hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
+              <div className="w-[30px] md:w-[40px] lg:w-[50px] xl:w-[60px] m-auto hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
                 <img src={item.icon} alt={item.name} />
               </div>
-              <div className="pt-[3px] text-center font-Rubik text-[20px]">
+              <div className="pt-[3px] text-center font-Rubik text-[10px] lg:text-[15px] xl:text-[20px]">
                 {item.name}
               </div>
             </div>
