@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 
-import "./media.css";
-
 import PcInterface from "./PcInterface/baseComponent";
 import PhoneInterface from "./PhoneInterface/baseComponent";
 
