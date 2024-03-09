@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      {screenWidth >= 480 ? <PcInterface /> : <PhoneInterface />}
+      {screenWidth >= 767 ? <PcInterface /> : <PhoneInterface />}
     </div>
   );
 }
