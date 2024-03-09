@@ -162,7 +162,7 @@ const Technologies = () => {
               key={index}
               className="w-[16.66%] flex-col justify-center items-center py-[1%]"
             >
-              <div className="w-[50px] h-[50px] m-auto flex justify-center items-center hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
+              <div className="w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px] lg:h-[50px] xl:h-[60px] m-auto flex justify-center items-center hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
                 <img
                   src={item.icon}
                   alt={item.name}
@@ -177,7 +177,7 @@ const Technologies = () => {
                   }`}
                 />
               </div>
-              <div className="pt-[8px] text-center font-Rubik text-[18px]">
+              <div className="pt-[3px] text-center font-Rubik text-[10px] lg:text-[15px] 2xl:text-[20px]">
                 {item.name}
               </div>
             </div>
