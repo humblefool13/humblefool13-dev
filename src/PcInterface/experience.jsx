@@ -99,18 +99,18 @@ const ExperiencePage = () => {
 
   return (
     <div className="min-h-[340vh]">
-      <div className="fixed top-[5.5%] left-[0] min-h-[90vh] min-w-[95vw] bg-experience-page"></div>
-      <div className="backdrop-blur-[80px]">
+      <div className="fixed top-[5.5%] left-[0] min-h-[90vh] min-w-[100vw] bg-experience-page"></div>
+      <div className="backdrop-blur-[40px]">
         <div className="m-auto max-w-[1536px] w-4/5">
           <div className="container flex flex-row min-h-[83vh]" id="container1">
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
-              <h1 className="font-Oswald underline-offset-4 py-[10px] text-[40px] font-bold underline">
+              <h1 className="font-Oswald underline-offset-2 py-[3px] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] md:underline-offset-4 lg:underline-offset-8 font-bold underline">
                 Easy Bot
               </h1>
-              <div className="py-[20px]">
+              <div className="py-[5px] md:py-[10px] lg:py-[15px] xl:py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={0.25} />
               </div>
-              <div className="font-Rubik text-[18px] w-4/5">
+              <div className="font-Rubik text-[8px] md:text-[10px] lg:text-[12px] xl:text-[17px] w-4/5">
                 This marked the inception of my inaugural public project — a
                 Discord bot designed to provide an array of games, community
                 management tools, and utility functions. At its zenith, the bot
@@ -131,9 +131,9 @@ const ExperiencePage = () => {
                 <img
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] w-[90%] m-auto rounded-3xl"
+                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-[90%] m-auto rounded-md"
                 />
-                <figcaption className="font-Space pt-[15px] text-center">
+                <figcaption className="font-Space text-[10px] pt-[5px] text-center">
                   The bot stats from 2021!
                 </figcaption>
               </div>
@@ -144,15 +144,15 @@ const ExperiencePage = () => {
             id="container2"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
-              <h1 className="font-Oswald underline-offset-4 py-[10px] text-[40px] text-gradient-green font-bold underline decoration-[#ffeb3b]">
+              <h1 className="font-Oswald underline-offset-2 py-[3px] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] md:underline-offset-4 lg:underline-offset-8 font-bold underline decoration-[#ffeb3b] text-gradient-green">
                 <a href="https://1337.group/" target="_blank" rel="noreferrer">
                   Group 1337
                 </a>
               </h1>
-              <div className="py-[20px]">
+              <div className="py-[5px] md:py-[10px] lg:py-[15px] xl:py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={0.5} />
               </div>
-              <div className="para-1337 font-Rubik text-[18px] w-4/5">
+              <div className="font-Rubik text-[8px] md:text-[10px] lg:text-[12px] xl:text-[17px] w-4/5">
                 Collaborating with this group stands out as one of the most
                 impactful experiences in my life. Initially involved in
                 marketing strategies and execution, my role later evolved to
@@ -175,20 +175,20 @@ const ExperiencePage = () => {
                   id="group-1337-imgs"
                   src={I13373}
                   alt={"Auto Impersonator Ban"}
-                  className="w-[400px] relative top-[2em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[150px] md:w-[170px] relative top-[2em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13372}
                   alt={"Keyword Bans"}
-                  className="w-[400px] relative bottom-[5em] left-[45%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[150px] md:w-[170px] relative left-[45%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13371}
                   alt={"Community Engagement"}
                   relative
-                  className="w-[400px] relative bottom-[10em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[150px] md:w-[170px] relative bottom-[2.5em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
                 />
               </div>
             </div>
@@ -198,13 +198,13 @@ const ExperiencePage = () => {
             id="container3"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
-              <h1 className="font-Oswald underline-offset-4 py-[10px] text-[40px] font-bold underline">
+              <h1 className="font-Oswald underline-offset-2 py-[3px] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] md:underline-offset-4 lg:underline-offset-8 font-bold underline">
                 BoBotLabs
               </h1>
-              <div className="py-[20px]">
+              <div className="py-[5px] md:py-[10px] lg:py-[15px] xl:py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={0.75} />
               </div>
-              <div className="bobot-para font-Rubik text-[18px] w-4/5">
+              <div className="bobot-para font-Rubik text-[8px] md:text-[10px] lg:text-[12px] xl:text-[17px] w-4/5">
                 I founded this organization with a vision to address common
                 challenges encountered by web3 users. The initiative encompassed
                 a range of applications tailored to the diverse needs of web3
@@ -228,34 +228,34 @@ const ExperiencePage = () => {
                 id="bobot-imgs"
                 src={BoBot2}
                 alt="Live collection data"
-                className="relative w-[400px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] right-[20%]"
+                className="relative md:w-[180px] w-[150px] top-[2em] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] right-[20%]"
               />
               <img
                 id="bobot-imgs"
                 src={BoBot4}
                 alt="Rhino Sales bot"
-                className="relative w-[350px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] bottom-[25%] left-[35%]"
+                className="relative md:w-[180px] w-[150px] bottom-[2em] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] left-[35%]"
               />
               <img
                 id="bobot-imgs"
                 src={BoBot3}
                 alt="Testimonial-1"
-                className="relative w-[450px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] left-[40%] bottom-[75%] rotate-[-20deg]"
+                className="relative md:w-[180px] w-[150px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] left-[40%] md:bottom-[20em] bottom-[18em] rotate-[-20deg]"
               />
               <img
                 id="bobot-imgs"
                 src={BoBot1}
                 alt="Testimonial-2"
-                className="relative w-[450px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl z-[6] right-[30%] bottom-[55%] rotate-[20deg]"
+                className="relative md:w-[180px] w-[150px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] right-[30%] md:bottom-[15em] bottom-[12em] rotate-[20deg]"
               />
             </div>
           </div>
           <div
-            className="container flex flex-row min-h-[83vh] opacity-[0.001]"
+            className="container flex flex-row min-h-[95vh] opacity-[0.001] pb-[10px]"
             id="container4"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
-              <h1 className="font-Oswald underline-offset-4 py-[10px] text-[40px] text-gradient-green font-bold underline decoration-[#ffeb3b]">
+              <h1 className="font-Oswald underline-offset-2 py-[3px] text-[20px] md:text-[25px] lg:text-[30px] xl:text-[40px] md:underline-offset-4 lg:underline-offset-8 font-bold underline decoration-[#ffeb3b] text-gradient-green">
                 <a
                   href="https://www.st6.ventures/"
                   target="_blank"
@@ -264,10 +264,13 @@ const ExperiencePage = () => {
                   ST6
                 </a>
               </h1>
-              <div className="py-[20px]">
+              <div className="py-[5px] md:py-[10px] lg:py-[15px] xl:py-[20px]">
                 <ProgressBar width={"20"} height={"2"} progress={1} />
               </div>
-              <div className="font-Rubik text-[18px] w-4/5" id="st6-info">
+              <div
+                className="font-Rubik text-[8px] md:text-[10px] lg:text-[12px] xl:text-[17px] w-4/5"
+                id="st6-info"
+              >
                 Collaborating with a highly skilled team, I spearheaded the
                 creation of a sophisticated giveaway bot. This advanced tool
                 seamlessly integrates with platforms like Discord and X
@@ -294,19 +297,19 @@ const ExperiencePage = () => {
                   id="pull"
                   src={ST63}
                   alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[500px] relative top-[8em] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[150px] relative top-[5em] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
                 />
                 <img
                   id="pull"
                   src={ST62}
                   alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[400px] rotate-[30deg] bottom-[5em] left-[50%] relative bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[150px] rotate-[30deg] bottom-[0em] left-[50%] relative bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
                 />
                 <img
                   id="pull"
                   src={ST61}
                   alt={"ST6 Giveaways ( SnapBot )"}
-                  className="w-[400px] relative bottom-[12em] left-[7%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[150px] relative bottom-[3em] left-[7%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
                 />
               </div>
             </div>
