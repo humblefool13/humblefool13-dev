@@ -15,6 +15,20 @@ import OverlayComponent from "./overlay.jsx";
 const CanvasComponent = () => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [size, setSize] = useState({
     height: window.innerHeight,
     width: window.innerWidth,
@@ -86,18 +100,18 @@ const CanvasComponent = () => {
         position={[0, 0, 80]}
       />
       <Sparkles
-        count={400}
+        count={screenWidth / 2}
         scale={200}
         color={"#34ddd5"}
-        size={20}
+        size={screenWidth / 40}
         speed={5}
         noise={0}
       />
       <Sparkles
-        count={400}
+        count={screenWidth / 2}
         scale={200}
         color={"#e25e46"}
-        size={20}
+        size={screenWidth / 40}
         speed={5}
         noise={0}
       />
