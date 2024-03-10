@@ -19,7 +19,7 @@ const Topbar = () => {
 
   return (
     <>
-      <div className="header-component-pc font-Yeseva invisible md:visible lg:text-[25px] md:text-[18px] 2xl:text-[30px] py-[10px] z-[100] bg-[#0f0e13]">
+      <div className="header-component-pc font-Yeseva hidden md:inline lg:text-[25px] md:text-[18px] 2xl:text-[30px] py-[10px] z-[100] bg-[#0f0e13]">
         <div className="max-w-[1536px] header-list m-auto w-4/5 flex flex-row justify-around items-center">
           <Link className="header-link no-underline" to="/">
             About Me
