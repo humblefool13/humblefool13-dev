@@ -3,7 +3,7 @@ import { Scroll } from "@react-three/drei";
 const OverlayComponent = () => {
   return (
     <Scroll html className="w-full">
-      <div className="absolute w-2/5 font-Rubik left-[55%] top-[150vh] p-[10px] bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] text-[9px] lg:text-[13px] xl:text-[17px]">
+      <div className="absolute w-2/5 font-Rubik left-[55%] top-[150vh] p-[10px] bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] text-[9px] lg:text-[13px] xl:text-[17px] max-w-[1000px]">
         <h1 className="md:py-[5px] lg:py-[10px] text-[20px] lg:text-[27px] xl:text-[35px]">
           Meet Bo!
         </h1>
@@ -25,7 +25,7 @@ const OverlayComponent = () => {
         of technological advancements drives my passion for creating innovative
         solutions.
       </div>
-      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[260vh] absolute w-2/5 p-[10px] left-[5%] font-Rubik text-[9px] lg:text-[13px] xl:text-[17px]">
+      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[260vh] absolute w-2/5 p-[10px] right-[55%] font-Rubik text-[9px] lg:text-[13px] xl:text-[17px] max-w-[1000px]">
         <h1 className="md:py-[5px] lg:py-[10px] text-[20px] lg:text-[27px] xl:text-[35px]">
           Current
         </h1>
@@ -42,7 +42,7 @@ const OverlayComponent = () => {
         hands-on experience, fostering both innovation and entrepreneurial
         spirit.
       </div>
-      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[355vh] absolute w-2/5 p-[10px] left-[55%] font-Rubik text-[9px] lg:text-[13px] xl:text-[17px]">
+      <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] border-solid border-[#ffffff4d] top-[355vh] absolute w-2/5 p-[10px] left-[55%] font-Rubik text-[9px] lg:text-[13px] xl:text-[17px] max-w-[1000px]">
         <h1 className="md:py-[5px] lg:py-[10px] text-[20px] lg:text-[27px] xl:text-[35px]">
           Future
         </h1>
