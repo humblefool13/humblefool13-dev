@@ -175,19 +175,20 @@ const ExperiencePage = () => {
                   id="group-1337-imgs"
                   src={I13373}
                   alt={"Auto Impersonator Ban"}
-                  className="w-[400px] absolute top-[26%] right-[23%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] relative top-[2em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13372}
                   alt={"Keyword Bans"}
-                  className="w-[400px] top-[33%] right-[2%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] relative bottom-[5em] left-[45%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13371}
                   alt={"Community Engagement"}
-                  className="w-[400px] absolute right-[18%] top-[37%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  relative
+                  className="w-[400px] relative bottom-[10em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
               </div>
             </div>
@@ -293,19 +294,19 @@ const ExperiencePage = () => {
                   id="pull"
                   src={ST63}
                   alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[500px] absolute top-[80%] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[500px] relative top-[8em] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
                   src={ST62}
                   alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[400px] rotate-[30deg] top-[80%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] rotate-[30deg] bottom-[5em] left-[50%] relative bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
                 <img
                   id="pull"
                   src={ST61}
                   alt={"ST6 Giveaways ( SnapBot )"}
-                  className="w-[400px] absolute right-[15%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
+                  className="w-[400px] relative bottom-[12em] left-[7%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[3px] rounded-3xl"
                 />
               </div>
             </div>
