@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -18,6 +18,8 @@ import BoBot4 from "../assets/experience/bobot4.png";
 import ProgressBar from "./ProgressBar";
 
 const ExperiencePage = () => {
+  const [imageSelected, setImageSelected] = useState(false);
+
   const tlStarter = useRef();
   const tlMain = useRef();
 
@@ -35,7 +37,7 @@ const ExperiencePage = () => {
     tlMain.current.to("#container2", { opacity: 0.001 }, 1.5);
     tlMain.current.to("#container4", { opacity: 1 }, 2.85);
     tlMain.current.to("#container3", { opacity: 0.001 }, 2.7);
-    tlMain.current.to("lol", {}, 3);
+    tlMain.current.to("ignore", {}, 3);
 
     tlStarter.current = gsap.timeline();
     tlStarter.current.fromTo(
@@ -57,7 +59,6 @@ const ExperiencePage = () => {
 
     gsap.from("#pull", {
       scrollTrigger: {
-        trigger: ".st6-info",
         start: "45% 10%",
         end: "94.3% 80%",
         scrub: 1,
@@ -88,6 +89,27 @@ const ExperiencePage = () => {
   return (
     <div>
       <div className="fixed top-[5.5%] left-[0] min-h-[90vh] min-w-[100vw] bg-experience-page"></div>
+      {imageSelected ? (
+        <>
+          <div
+            className="fixed top-[0] z-[500] min-h-[100vh] min-w-[100vw] backdrop-blur-[30px] backdrop-grayscale-[50%] "
+            onClick={() => setImageSelected(false)}
+          >
+            <div className="w-[90%] h-screen m-auto flex flex-col justify-center items-center">
+              <img
+                className="max-w-[500px] max-h-[70vh]"
+                src={imageSelected.src}
+                alt={imageSelected.src}
+              />
+              <p className="font-Space text-[6px] md:text-[8px] lg:text-[10px] xl:text-[14px] pt-[2%] text-center w-[70%]">
+                {imageSelected.desc}
+              </p>
+            </div>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
       <div className="backdrop-blur-[40px]">
         <div className="m-auto max-w-[1536px] w-4/5">
           <div className="container flex flex-row min-h-[83vh]" id="container1">
@@ -117,13 +139,16 @@ const ExperiencePage = () => {
             <div className="w-2/5 flex flex-row justify-center items-center">
               <div>
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: Easy,
+                      desc: "The bot stats from 2021!",
+                    })
+                  }
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-[90%] m-auto rounded-md max-w-[380px]"
+                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-[90%] m-auto rounded-md max-w-[380px] cursor-zoom-in"
                 />
-                <figcaption className="font-Space text-[10px] pt-[5px] text-center">
-                  The bot stats from 2021!
-                </figcaption>
               </div>
             </div>
           </div>
@@ -160,23 +185,41 @@ const ExperiencePage = () => {
             <div className="w-2/5 flex flex-row justify-center items-center">
               <div>
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: I13373,
+                      desc: "Team Member Impersonator Ban System!",
+                    })
+                  }
                   id="group-1337-imgs"
                   src={I13373}
                   alt={"Auto Impersonator Ban"}
-                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[100vh] right-[25vw] max-w-[380px]"
+                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[100vh] right-[25vw] max-w-[380px] cursor-zoom-in"
                 />
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: I13372,
+                      desc: "Keyword Ban - Bot/Spam Protection!",
+                    })
+                  }
                   id="group-1337-imgs"
                   src={I13372}
                   alt={"Keyword Bans"}
-                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[125vh] max-w-[380px]"
+                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[125vh] max-w-[380px] cursor-zoom-in"
                 />
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: I13371,
+                      desc: "Other minor community engagment functions!",
+                    })
+                  }
                   id="group-1337-imgs"
                   src={I13371}
                   alt={"Community Engagement"}
                   relative
-                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[135vh] right-[23vw] max-w-[380px]"
+                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[135vh] right-[23vw] max-w-[380px] cursor-zoom-in"
                 />
               </div>
             </div>
@@ -213,28 +256,52 @@ const ExperiencePage = () => {
             </div>
             <div className="w-2/5 flex flex-col mt-[10vh] justify-center items-center">
               <img
+                onClick={() =>
+                  setImageSelected({
+                    src: BoBot2,
+                    desc: "Live collection data obtained from chain!",
+                  })
+                }
                 id="bobot-imgs"
                 src={BoBot2}
                 alt="Live collection data"
-                className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[200vh] right-[10vw] max-w-[380px]"
+                className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[200vh] right-[10vw] max-w-[380px] cursor-zoom-in"
               />
               <img
+                onClick={() =>
+                  setImageSelected({
+                    src: BoBot4,
+                    desc: "Market events notification for communities!",
+                  })
+                }
                 id="bobot-imgs"
                 src={BoBot4}
                 alt="Rhino Sales bot"
-                className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[180vh] right-[30vw] max-w-[380px]"
+                className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[180vh] right-[30vw] max-w-[380px] cursor-zoom-in"
               />
               <img
+                onClick={() =>
+                  setImageSelected({
+                    src: BoBot3,
+                    desc: "Review by Hydraze - Founder of OCB!",
+                  })
+                }
                 id="bobot-imgs"
                 src={BoBot3}
                 alt="Testimonial-1"
-                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[185vh] right-[6vw] max-w-[380px]"
+                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[185vh] right-[6vw] max-w-[380px] cursor-zoom-in"
               />
               <img
+                onClick={() =>
+                  setImageSelected({
+                    src: BoBot1,
+                    desc: "Testimonial by Zelx - Founder of ETHXAI!",
+                  })
+                }
                 id="bobot-imgs"
                 src={BoBot1}
                 alt="Testimonial-2"
-                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[225vh] right-[25vw] max-w-[380px]"
+                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[225vh] right-[25vw] max-w-[380px] cursor-zoom-in"
               />
             </div>
           </div>
@@ -282,22 +349,40 @@ const ExperiencePage = () => {
             <div className="w-2/5 flex flex-row justify-center items-center">
               <div>
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: ST62,
+                      desc: "An advanced server gating mechanism which leverages activity!",
+                    })
+                  }
                   id="pull"
                   src={ST62}
                   alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md right-[25vw] bottom-[20vh] max-w-[380px]"
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md right-[25vw] bottom-[20vh] max-w-[380px] cursor-zoom-in"
                 />
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: ST63,
+                      desc: "AI assistant that guides communities based on docs provided!",
+                    })
+                  }
                   id="pull"
                   src={ST63}
                   alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[45vh] right-[8vw] max-w-[380px]"
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[45vh] right-[8vw] max-w-[380px] cursor-zoom-in"
                 />
                 <img
+                  onClick={() =>
+                    setImageSelected({
+                      src: ST61,
+                      desc: "Snapbot is a very advanced web3 giveaway bot which integrated multiple blockchains, discord and twitter accounts. What makes it the most advanced is the ability to perform the requirements on users' behalf!",
+                    })
+                  }
                   id="pull"
                   src={ST61}
                   alt={"ST6 Giveaways ( SnapBot )"}
-                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[10vh] right-[6vw] max-w-[380px]"
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[10vh] right-[6vw] max-w-[380px] cursor-zoom-in"
                 />
               </div>
             </div>
