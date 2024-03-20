@@ -83,22 +83,10 @@ const ExperiencePage = () => {
       duration: 5,
       ease: "none",
     });
-
-    gsap.from("#group-1337-imgs", {
-      scrollTrigger: {
-        trigger: ".para-1337",
-        start: "25% 80%",
-        end: "100% 90%",
-        scrub: 1,
-      },
-      filter: "invert(1)",
-      duration: 5,
-      ease: "none",
-    });
   }, []);
 
   return (
-    <div className="min-h-[340vh]">
+    <div>
       <div className="fixed top-[5.5%] left-[0] min-h-[90vh] min-w-[100vw] bg-experience-page"></div>
       <div className="backdrop-blur-[40px]">
         <div className="m-auto max-w-[1536px] w-4/5">
@@ -131,7 +119,7 @@ const ExperiencePage = () => {
                 <img
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-[90%] m-auto rounded-md"
+                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-[90%] m-auto rounded-md max-w-[380px]"
                 />
                 <figcaption className="font-Space text-[10px] pt-[5px] text-center">
                   The bot stats from 2021!
@@ -175,20 +163,20 @@ const ExperiencePage = () => {
                   id="group-1337-imgs"
                   src={I13373}
                   alt={"Auto Impersonator Ban"}
-                  className="w-[150px] md:w-[170px] relative top-[2em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
+                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[100vh] right-[25vw] max-w-[380px]"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13372}
                   alt={"Keyword Bans"}
-                  className="w-[150px] md:w-[170px] relative left-[45%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
+                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[125vh] max-w-[380px]"
                 />
                 <img
                   id="group-1337-imgs"
                   src={I13371}
                   alt={"Community Engagement"}
                   relative
-                  className="w-[150px] md:w-[170px] relative bottom-[2.5em] right-[50%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
+                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[135vh] right-[23vw] max-w-[380px]"
                 />
               </div>
             </div>
@@ -228,30 +216,30 @@ const ExperiencePage = () => {
                 id="bobot-imgs"
                 src={BoBot2}
                 alt="Live collection data"
-                className="relative md:w-[180px] w-[150px] top-[2em] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] right-[20%]"
+                className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[200vh] right-[10vw] max-w-[380px]"
               />
               <img
                 id="bobot-imgs"
                 src={BoBot4}
                 alt="Rhino Sales bot"
-                className="relative md:w-[180px] w-[150px] bottom-[2em] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] left-[35%]"
+                className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[180vh] right-[30vw] max-w-[380px]"
               />
               <img
                 id="bobot-imgs"
                 src={BoBot3}
                 alt="Testimonial-1"
-                className="relative md:w-[180px] w-[150px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] left-[40%] md:bottom-[20em] bottom-[18em] rotate-[-20deg]"
+                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[185vh] right-[6vw] max-w-[380px]"
               />
               <img
                 id="bobot-imgs"
                 src={BoBot1}
                 alt="Testimonial-2"
-                className="relative md:w-[180px] w-[150px] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md z-[6] right-[30%] md:bottom-[15em] bottom-[12em] rotate-[20deg]"
+                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[225vh] right-[25vw] max-w-[380px]"
               />
             </div>
           </div>
           <div
-            className="container flex flex-row min-h-[95vh] opacity-[0.001] pb-[10px]"
+            className="container flex flex-row min-h-[90vh] opacity-[0.001] pb-[10px]"
             id="container4"
           >
             <div className="w-3/5 flex flex-col mt-[10vh] p-[20px]">
@@ -295,21 +283,21 @@ const ExperiencePage = () => {
               <div>
                 <img
                   id="pull"
-                  src={ST63}
-                  alt={"ST6 AI Assistant ( XFini )"}
-                  className="w-[150px] relative top-[5em] right-[17%] rotate-[-20deg] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
+                  src={ST62}
+                  alt={"ST6 Community Gate ( DraupFly )"}
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md right-[25vw] bottom-[20vh] max-w-[380px]"
                 />
                 <img
                   id="pull"
-                  src={ST62}
-                  alt={"ST6 Community Gate ( DraupFly )"}
-                  className="w-[150px] rotate-[30deg] bottom-[0em] left-[50%] relative bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
+                  src={ST63}
+                  alt={"ST6 AI Assistant ( XFini )"}
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[45vh] right-[8vw] max-w-[380px]"
                 />
                 <img
                   id="pull"
                   src={ST61}
                   alt={"ST6 Giveaways ( SnapBot )"}
-                  className="w-[150px] relative bottom-[3em] left-[7%] bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md"
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[10vh] right-[6vw] max-w-[380px]"
                 />
               </div>
             </div>
