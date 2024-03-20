@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 import Menu from "../assets/menu.png";
 import Cross from "../assets/cross.png";
+import Resume from "../assets/resume.pdf";
 
 const Topbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
-  function downloadResume() {}
+  function openResume() {
+    window.open(Resume, "_blank");
+  }
 
   function toggleMenu() {
     setShowMenu(!showMenu);
@@ -30,7 +33,7 @@ const Topbar = () => {
           <Link className="header-link no-underline" to="/experience">
             Experience
           </Link>
-          <Link className="header-link no-underline" onClick={downloadResume}>
+          <Link className="header-link no-underline" onClick={openResume}>
             Resume
           </Link>
           <Link className="header-link no-underline" to="/contact">
@@ -87,7 +90,7 @@ const Topbar = () => {
           </Link>
           <Link
             className="header-link no-underline py-[20px]"
-            onClick={downloadResume}
+            onClick={openResume}
           >
             Resume
           </Link>
