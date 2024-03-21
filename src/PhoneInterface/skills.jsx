@@ -43,6 +43,11 @@ import Netlify from "../assets/technologies/netlify.png";
 import Next from "../assets/technologies/next.png";
 import Payments from "../assets/technologies/payments.png";
 
+import MSTeams from "../assets/msteams.png";
+import Notion from "../assets/notion.png";
+import Linear from "../assets/linear.png";
+import Slack from "../assets/slack.png";
+
 const languages = [
   {
     name: "BASIC",
@@ -229,32 +234,34 @@ const Skills = () => {
           Hard Skills
         </div>
         <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] my-[1vh]">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Programming Languages
           </div>
-          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] shadow-[0_15px_60px_-15px_#ffeb3b] flex flex-row flex-wrap justify-evenly items-center mb-[6vh]">
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] shadow-[0_25px_60px_-15px_#ffeb3b] flex flex-row flex-wrap justify-evenly items-center mb-[6vh]">
             {languages.map((language) => {
               return (
-                <div className="w-[33.33%] p-[10px]">
+                <div className="w-[33.33%] p-[10px] hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
                   <img
                     src={language.icon}
                     alt={language.name}
                     className="w-[13vw] m-auto"
                   />
-                  <div className="text-center text-[4vw]">{language.name}</div>
+                  <div className="text-center text-[4vw] font-Rubik">
+                    {language.name}
+                  </div>
                 </div>
               );
             })}
           </div>
         </div>
         <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] my-[1vh]">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Technologies
           </div>
-          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] shadow-[0_15px_60px_-15px_#ffeb3b] flex flex-row flex-wrap justify-evenly items-center mb-[6vh]">
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#6af50d] shadow-[0_25px_60px_-15px_#ffeb3b] flex flex-row flex-wrap justify-evenly items-center mb-[6vh]">
             {technologies.map((technology) => {
               return (
-                <div className="w-[33.33%] p-[10px]">
+                <div className="w-[33.33%] p-[10px] hover:drop-shadow-[0_0_2em_rgba(106,245,13,1)]">
                   <img
                     src={technology.icon}
                     alt={technology.name}
@@ -268,7 +275,7 @@ const Skills = () => {
                         : ""
                     } w-[13vw] m-auto`}
                   />
-                  <div className="text-center text-[4vw]">
+                  <div className="text-center text-[4vw] font-Rubik">
                     {technology.name}
                   </div>
                 </div>
@@ -282,18 +289,162 @@ const Skills = () => {
           Soft Skills
         </div>
         <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray]">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Collaborative Proficiency
           </div>
-        </div>
-        <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray]">
-            Community Relations and Leadership
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#b7eafc] shadow-[0_25px_60px_-15px_#d7bef5] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
+            <div className="font-Rubik text-[4vw]">
+              With a proven track record in team collaboration, I have
+              accumulated valuable experience working within diverse teams,
+              ranging from compact units of 5 members to larger-scale
+              collaborations involving up to 30 individuals.
+              <br />
+              <br />
+              Furthermore, I am adept at seamlessly integrating into remote work
+              environments, demonstrating a high level of time flexibility to
+              accommodate teams dispersed across different parts of the world.
+              <br />
+              <br />
+              In collaborative development environments, I bring proficiency
+              with essential tools such as Slack, Notion, MSTeams and Linear.
+              This ensures streamlined communication and project management.
+            </div>
+            <div className="w-full flex flex-row flex-wrap mt-[10px]">
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={MSTeams}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Notion}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Linear}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Slack}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray]">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
+            Community Relations and Leadership
+          </div>
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#b7eafc] shadow-[0_25px_60px_-15px_#d7bef5] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
+            <div className="font-Rubik text-[4vw]">
+              With a proven track record in team collaboration, I have
+              accumulated valuable experience working within diverse teams,
+              ranging from compact units of 5 members to larger-scale
+              collaborations involving up to 30 individuals.
+              <br />
+              <br />
+              Furthermore, I am adept at seamlessly integrating into remote work
+              environments, demonstrating a high level of time flexibility to
+              accommodate teams dispersed across different parts of the world.
+              <br />
+              <br />
+              In collaborative development environments, I bring proficiency
+              with essential tools such as Slack, Notion, MSTeams and Linear.
+              This ensures streamlined communication and project management.
+            </div>
+            <div className="w-full flex flex-row flex-wrap mt-[10px]">
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={MSTeams}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Notion}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Linear}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Slack}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Language Proficiency
+          </div>
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#b7eafc] shadow-[0_25px_60px_-15px_#d7bef5] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
+            <div className="font-Rubik text-[4vw]">
+              With a proven track record in team collaboration, I have
+              accumulated valuable experience working within diverse teams,
+              ranging from compact units of 5 members to larger-scale
+              collaborations involving up to 30 individuals.
+              <br />
+              <br />
+              Furthermore, I am adept at seamlessly integrating into remote work
+              environments, demonstrating a high level of time flexibility to
+              accommodate teams dispersed across different parts of the world.
+              <br />
+              <br />
+              In collaborative development environments, I bring proficiency
+              with essential tools such as Slack, Notion, MSTeams and Linear.
+              This ensures streamlined communication and project management.
+            </div>
+            <div className="w-full flex flex-row flex-wrap mt-[10px]">
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={MSTeams}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Notion}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Linear}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+              <div className="w-[50%] m-auto my-[0.5vh]">
+                <img
+                  src={Slack}
+                  alt="MS Teams"
+                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -302,12 +453,12 @@ const Skills = () => {
           Offbeat Talents
         </div>
         <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray]">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Adaptable Work Ethic
           </div>
         </div>
         <div className="container">
-          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray]">
+          <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Leveraging AI tools
           </div>
         </div>
