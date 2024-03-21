@@ -1,16 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Rubik&family=Space+Grotesk&family=Yeseva+One&family=Bungee+Spice&display=swap");
-
-:root {
-  color-scheme: dark;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  user-select: none;
-  color: white;
-}
-
 .text-behind {
   text-shadow: 0 0 40px rgba(192, 219, 255, 0.48),
     0 0 20px rgba(65, 120, 255, 0.24);
