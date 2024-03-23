@@ -48,6 +48,12 @@ import Notion from "../assets/notion.png";
 import Linear from "../assets/linear.png";
 import Slack from "../assets/slack.png";
 
+import Duolingo from "../assets/duolingo.png";
+import Certificate from "../assets/akshat_humblefool13_duolingo.pdf";
+import CommunityImg from "../assets/community.png";
+import Ai from "../assets/ai.jpeg";
+import Dev from "../assets/dev.png";
+
 const languages = [
   {
     name: "BASIC",
@@ -320,21 +326,21 @@ const Skills = () => {
               <div className="w-[50%] m-auto my-[0.5vh]">
                 <img
                   src={Notion}
-                  alt="MS Teams"
+                  alt="Notion"
                   className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
                 />
               </div>
               <div className="w-[50%] m-auto my-[0.5vh]">
                 <img
                   src={Linear}
-                  alt="MS Teams"
+                  alt="Linear"
                   className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
                 />
               </div>
               <div className="w-[50%] m-auto my-[0.5vh]">
                 <img
                   src={Slack}
-                  alt="MS Teams"
+                  alt="Slack"
                   className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
                 />
               </div>
@@ -347,50 +353,23 @@ const Skills = () => {
           </div>
           <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#b7eafc] shadow-[0_25px_60px_-15px_#d7bef5] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
             <div className="font-Rubik text-[4vw]">
-              With a proven track record in team collaboration, I have
-              accumulated valuable experience working within diverse teams,
-              ranging from compact units of 5 members to larger-scale
-              collaborations involving up to 30 individuals.
+              I demonstrate extensive experience in cultivating and maintaining
+              relationships within communities, including a notable track record
+              of managing a{" "}
+              <span className="text-gradient-green font-bold">
+                200k member community
+              </span>{" "}
+              and various other communities exceeding 50k members.
               <br />
-              <br />
-              Furthermore, I am adept at seamlessly integrating into remote work
-              environments, demonstrating a high level of time flexibility to
-              accommodate teams dispersed across different parts of the world.
-              <br />
-              <br />
-              In collaborative development environments, I bring proficiency
-              with essential tools such as Slack, Notion, MSTeams and Linear.
-              This ensures streamlined communication and project management.
+              <br />I also hold experience in serving as a vital communication
+              link between teams and communities, I bring a unique skill set in
+              supervising teams of community moderators. I effectively provide
+              support in planning and executing events, as well as overseeing
+              various community activities to ensure a thriving and engaged
+              community environment.
             </div>
-            <div className="w-full flex flex-row flex-wrap mt-[10px]">
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={MSTeams}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={Notion}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={Linear}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={Slack}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
+            <div className="image mt-[10px]">
+              <img className="my-[0.5vh]" src={CommunityImg} alt="Community" />
             </div>
           </div>
         </div>
@@ -400,50 +379,27 @@ const Skills = () => {
           </div>
           <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#b7eafc] shadow-[0_25px_60px_-15px_#d7bef5] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
             <div className="font-Rubik text-[4vw]">
-              With a proven track record in team collaboration, I have
-              accumulated valuable experience working within diverse teams,
-              ranging from compact units of 5 members to larger-scale
-              collaborations involving up to 30 individuals.
-              <br />
-              <br />
-              Furthermore, I am adept at seamlessly integrating into remote work
-              environments, demonstrating a high level of time flexibility to
-              accommodate teams dispersed across different parts of the world.
-              <br />
-              <br />
-              In collaborative development environments, I bring proficiency
-              with essential tools such as Slack, Notion, MSTeams and Linear.
-              This ensures streamlined communication and project management.
+              Proficient in both written and spoken English, I hold
+              certification from the Duolingo English Test, validating my
+              language proficiency.
             </div>
-            <div className="w-full flex flex-row flex-wrap mt-[10px]">
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={MSTeams}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={Notion}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={Linear}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
-              <div className="w-[50%] m-auto my-[0.5vh]">
-                <img
-                  src={Slack}
-                  alt="MS Teams"
-                  className="w-[13vw] m-auto bg-white rounded-xl hover:drop-shadow-[0_0_1.5em_rgba(97,218,251,0.67)]"
-                />
-              </div>
+            <div className="image mt-[10px] flex justify-center items-center">
+              <img
+                className="my-[0.5vh] w-[95%]"
+                src={Duolingo}
+                alt="Duolingo Result"
+              />
+            </div>
+            <div className="link mt-[15px] uppercase font-Space text-[10px] leading-tight">
+              The full result can be{" "}
+              <a
+                href={Certificate}
+                target="_blank"
+                rel="noreferrer"
+                className="text-gradient-green font-semibold underline"
+              >
+                seen here!
+              </a>
             </div>
           </div>
         </div>
@@ -456,10 +412,44 @@ const Skills = () => {
           <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Adaptable Work Ethic
           </div>
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#e554a6] shadow-[0_25px_60px_-15px_#940b92] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
+            <div className="font-Rubik text-[4vw]">
+              I take pride in my resilient and adaptable work ethic, investing
+              extended hours to maintain peak performance. I've successfully
+              completed overtime projects, demonstrating a commitment to going
+              above and beyond. I can work diligently and stay focused for
+              continuous periods, including instances of up to 3 days.
+              <br />
+              <br />I thrive in high-pressure, fast-paced startup environments
+              and am ready to invest extended hours for launches and critical
+              deadlines. Additionally, I'm committed to being available for
+              unforeseen emergencies outside of standard working hours.
+            </div>
+            <div className="image mt-[10px] flex justify-center items-center">
+              <img className="my-[0.5vh] w-[70%]" src={Dev} alt="Work Hours" />
+            </div>
+          </div>
         </div>
         <div className="container">
           <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Leveraging AI tools
+          </div>
+          <div className="bg-[#ffffff0d] rounded-2xl backdrop-blur-[5px] border-[1px] hover:border-[0.3px] border-solid border-[#ffffff4d] hover:border-[#e554a6] shadow-[0_25px_60px_-15px_#940b92] flex flex-row flex-wrap justify-evenly items-center mb-[6vh] p-[10px]">
+            <div className="font-Rubik text-[4vw]">
+              I leverage advanced AI tools to optimize and elevate my
+              professional performance. By seamlessly integrating artificial
+              intelligence into my workflow, I not only enhance productivity but
+              also efficiently accomplish tasks within shorter timeframes. This
+              strategic use of AI allows me to stay ahead in a rapidly evolving
+              work landscape, enabling precision, speed, and the ability to
+              tackle complex challenges with streamlined efficiency. Through
+              continuous exploration of emerging AI technologies, I strive to
+              consistently refine and augment my skill set, ensuring a
+              competitive edge in delivering high-quality results.
+            </div>
+            <div className="image mt-[10px] flex justify-center items-center">
+              <img className="my-[0.5vh] w-[70%]" src={Ai} alt="AI" />
+            </div>
           </div>
         </div>
       </div>
