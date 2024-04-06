@@ -430,7 +430,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container mb-[12vh]">
           <div className="w-full text-center font-Oswald uppercase text-[5vw] text-[gray] mb-[1vh] mt-[2vh]">
             Leveraging AI tools
           </div>

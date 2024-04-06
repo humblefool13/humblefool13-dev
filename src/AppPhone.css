@@ -1,0 +1,33 @@
+.text-gradient-green {
+  background: linear-gradient(to right, #6af50d, #ffeb3b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(to right, #b7eafc, #d7bef5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-red {
+  background: linear-gradient(to right, #e554a6, #940b92);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-gradient {
+  background: radial-gradient(
+    circle at center,
+    transparent 10%,
+    #6af50d 15%,
+    #ffeb3b 20%,
+    transparent 25%,
+    #6af50d 30%,
+    #ffeb3b 40%,
+    transparent 50%
+  );
+}
