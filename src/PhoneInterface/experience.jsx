@@ -80,9 +80,9 @@ const ExperiencePage = () => {
             className="fixed top-[0] z-[500] min-h-[100vh] min-w-[100vw] backdrop-blur-[30px] backdrop-grayscale-[50%] "
             onClick={() => setImageSelected(false)}
           >
-            <div className="w-[80%] h-screen m-auto flex flex-col justify-center items-center">
+            <div className="w-[90vw] h-screen m-auto flex flex-col justify-center items-center">
               <img
-                className="max-w-[400px] max-h-[70vh]"
+                className="max-h-[70vh]"
                 src={imageSelected.src}
                 alt={imageSelected.src}
               />
