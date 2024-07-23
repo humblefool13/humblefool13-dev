@@ -137,7 +137,7 @@ const ExperiencePage = () => {
               </div>
             </div>
             <div className="w-2/5 flex flex-row justify-center items-center">
-              <div>
+              <div className="w-full">
                 <img
                   onClick={() =>
                     setImageSelected({
@@ -147,7 +147,7 @@ const ExperiencePage = () => {
                   }
                   src={Easy}
                   alt="Easy Bot Peak"
-                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-[90%] m-auto rounded-md max-w-[380px] cursor-zoom-in"
+                  className="bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] w-full rounded-md cursor-zoom-in"
                 />
               </div>
             </div>
@@ -206,7 +206,7 @@ const ExperiencePage = () => {
                   id="group-1337-imgs"
                   src={I13372}
                   alt={"Keyword Bans"}
-                  className="w-[20%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[125vh] max-w-[380px] cursor-zoom-in"
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[125vh]  cursor-zoom-in"
                 />
                 <img
                   onClick={() =>
@@ -289,7 +289,7 @@ const ExperiencePage = () => {
                 id="bobot-imgs"
                 src={BoBot3}
                 alt="Testimonial-1"
-                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[185vh] right-[6vw] max-w-[380px] cursor-zoom-in"
+                className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md top-[188vh] right-[10vw] max-w-[380px] cursor-zoom-in"
               />
               <img
                 onClick={() =>
@@ -382,7 +382,7 @@ const ExperiencePage = () => {
                   id="pull"
                   src={ST61}
                   alt={"ST6 Giveaways ( SnapBot )"}
-                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[10vh] right-[6vw] max-w-[380px] cursor-zoom-in"
+                  className="w-[25%] absolute bg-[linear-gradient(_#6af50d_10%,#0f0e13_30%,#0f0e13_70%,#ffeb3b_90%_)] p-[1px] rounded-md bottom-[13vh] right-[6vw] max-w-[380px] cursor-zoom-in"
                 />
               </div>
             </div>
