@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -9,8 +10,25 @@ import Community from "./Community";
 import Language from "./Language";
 import WorkOnDemand from "./WorkHours";
 import Ai from "./AI";
+import UpArrow from "../assets/up-arrow.png";
 
 const SkillsPage = () => {
+  const [visible, setVisible] = useState(false);
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+  window.addEventListener("scroll", toggleVisible);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -59,6 +77,13 @@ const SkillsPage = () => {
 
   return (
     <div className="skills-page overflow-hidden">
+      <img
+        className="fixed w-[4rem] top-[83vh] right-[4vw] z-[5000] animate-bounce hover:animate-none"
+        src={UpArrow}
+        style={{ display: visible ? "inline" : "none" }}
+        alt="Scroll to Top"
+        onClick={scrollToTop}
+      />
       <div className="pages-container-hard min-h-[100vh] min-w-[100vw] flex items-center">
         <section className="page-hard min-h-[100%] min-w-[100%] background-programming-languages">
           <div className="heading-hard-skill w-full text-center text-[30px] md:text-[35px] lg:text-[40px] xl:text-[55px] 2xl:text-[80px] text-gradient-green font-bold underline decoration-[#ffeb3b] decoration-double decoration-2 md:decoration-4 lg:decoration-8">
