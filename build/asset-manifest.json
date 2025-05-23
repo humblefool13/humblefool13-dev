@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.524264aa.css",
-    "main.js": "/static/js/main.a04a3642.js",
-    "static/js/27.dbe972c5.chunk.js": "/static/js/27.dbe972c5.chunk.js",
+    "main.css": "/static/css/main.eefc9526.css",
+    "main.js": "/static/js/main.7a04ca33.js",
+    "static/js/787.95c9d0ce.chunk.js": "/static/js/787.95c9d0ce.chunk.js",
     "static/media/akshat_humblefool13_duolingo.pdf": "/static/media/akshat_humblefool13_duolingo.53a20a76d7b5220c650d.pdf",
     "static/media/bg.gif": "/static/media/bg.44850ade77dc0bdad2a8.gif",
     "static/media/dev.png": "/static/media/dev.8ebc621ec553aed70264.png",
     "static/media/st62.png": "/static/media/st62.ca31bf31207b271a55ba.png",
     "static/media/team.png": "/static/media/team.57a1f7c05a3480aa57aa.png",
-    "static/media/resume.pdf": "/static/media/resume.c440970d59150fc73404.pdf",
     "static/media/community.png": "/static/media/community.d326dd75b5e4cebdbfa0.png",
     "static/media/payments.png": "/static/media/payments.0fa8f3fe32f027fc6640.png",
+    "static/media/resume.pdf": "/static/media/resume.4cd0d42fb8e631eddaa6.pdf",
     "static/media/bas.png": "/static/media/bas.b368b291f8d0e5e501e5.png",
     "static/media/st61.png": "/static/media/st61.c2edd38896a097d9b720.png",
     "static/media/ai.jpeg": "/static/media/ai.5075f001d6d081ef6841.jpeg",
@@ -64,10 +64,13 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.5f221ec70518e4c64eaa.png",
     "static/media/electron.svg": "/static/media/electron.c353de421a3d705b52896abcdeb9fdad.svg",
-    "index.html": "/index.html"
+    "index.html": "/index.html",
+    "main.eefc9526.css.map": "/static/css/main.eefc9526.css.map",
+    "main.7a04ca33.js.map": "/static/js/main.7a04ca33.js.map",
+    "787.95c9d0ce.chunk.js.map": "/static/js/787.95c9d0ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.524264aa.css",
-    "static/js/main.a04a3642.js"
+    "static/css/main.eefc9526.css",
+    "static/js/main.7a04ca33.js"
   ]
 }
